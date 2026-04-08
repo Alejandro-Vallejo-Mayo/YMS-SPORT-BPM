@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="ASCII"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="carlos.mendoza">
+      <firstName>Carlos</firstName>
+      <lastName>Mendoza</lastName>
+      <jobTitle>Gerente</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>gerente@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="javier.ruiz">
+      <firstName>Javier</firstName>
+      <lastName>Ruiz</lastName>
+      <jobTitle>Jefe Mantenimiento</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>jmantenimiento@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="laura.diaz">
+      <firstName>Laura</firstName>
+      <lastName>Diaz</lastName>
+      <jobTitle>Recepcionista 1</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>recepcion1@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="antonio.gomez">
+      <firstName>Antonio</firstName>
+      <lastName>Gomez</lastName>
+      <jobTitle>Jardinero 1</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>jardinero1@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="diego.castro">
+      <firstName>Diego</firstName>
+      <lastName>Castro</lastName>
+      <jobTitle>Monitor Padel 1</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>mpadel1@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="luia.fernandez">
+      <firstName>Luis</firstName>
+      <lastName>Fernandez</lastName>
+      <jobTitle>Jardinero 2</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>jardinero2@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="pedro.sanchez">
+      <firstName>Pedro</firstName>
+      <lastName>Sanchez</lastName>
+      <jobTitle>Jardinero 3</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>jardinero3@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="elena.torres">
+      <firstName>Elena</firstName>
+      <lastName>Torres</lastName>
+      <jobTitle>Recepcionista 2</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>recepcion2@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="marcos.silva">
+      <firstName>Marcos</firstName>
+      <lastName>Silva</lastName>
+      <jobTitle>Recepcionista 3</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>recepcion3@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="sofia.navarro">
+      <firstName>Sofia</firstName>
+      <lastName>Navarro</lastName>
+      <jobTitle>Recepcionista 4</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>recepcion4@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="raul.jimenez">
+      <firstName>Raul</firstName>
+      <lastName>Jimenez</lastName>
+      <jobTitle>Monitor Padel 2</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>mpadel2@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="ana.beltran">
+      <firstName>Ana </firstName>
+      <lastName>Beltran</lastName>
+      <jobTitle>Monitor Tenis</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>mtenis@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="sergio.vega">
+      <firstName>Sergio</firstName>
+      <lastName>Vega</lastName>
+      <jobTitle>Monitor Futbol</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>mfutbol@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="clara.ortiz">
+      <firstName>Clara</firstName>
+      <lastName>Ortiz</lastName>
+      <jobTitle>Monitor Gimnasio</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>mgimnasio@mirabueno.local</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Gerente">
+      <displayName>Gerente</displayName>
+    </role>
+    <role name="JefeMantenimiento">
+      <displayName>JefeMantenimiento</displayName>
+    </role>
+    <role name="Recepcionista">
+      <displayName>Recepcionista</displayName>
+    </role>
+    <role name="Jardinero">
+      <displayName>Jardinero</displayName>
+    </role>
+    <role name="MonitorPadel">
+      <displayName>MonitorPadel</displayName>
+    </role>
+    <role name="MonitorTenis">
+      <displayName>MonitorTenis</displayName>
+    </role>
+    <role name="MonitorFutbol">
+      <displayName>MonitorFutbol</displayName>
+    </role>
+    <role name="MonitorGimnasio">
+      <displayName>MonitorGimnasio</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="GerenciaDireccion">
+      <displayName>GerenciaDireccion</displayName>
+    </group>
+    <group name="RecepcionAtencionCliente">
+      <displayName>RecepcionAtencionCliente</displayName>
+    </group>
+    <group name="MantenimientoOperaciones">
+      <displayName>MantenimientoOperaciones</displayName>
+    </group>
+    <group name="AreaDeportiva">
+      <displayName>AreaDeportiva</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>carlos.mendoza</userName>
+      <roleName>Gerente</roleName>
+      <groupName>GerenciaDireccion</groupName>
+    </membership>
+    <membership>
+      <userName>javier.ruiz</userName>
+      <roleName>JefeMantenimiento</roleName>
+      <groupName>MantenimientoOperaciones</groupName>
+    </membership>
+    <membership>
+      <userName>laura.diaz</userName>
+      <roleName>Recepcionista</roleName>
+      <groupName>RecepcionAtencionCliente</groupName>
+    </membership>
+    <membership>
+      <userName>antonio.gomez</userName>
+      <roleName>Jardinero</roleName>
+      <groupName>MantenimientoOperaciones</groupName>
+    </membership>
+    <membership>
+      <userName>diego.castro</userName>
+      <roleName>MonitorPadel</roleName>
+      <groupName>AreaDeportiva</groupName>
+    </membership>
+    <membership>
+      <userName>luia.fernandez</userName>
+      <roleName>Jardinero</roleName>
+      <groupName>MantenimientoOperaciones</groupName>
+    </membership>
+    <membership>
+      <userName>pedro.sanchez</userName>
+      <roleName>Jardinero</roleName>
+      <groupName>MantenimientoOperaciones</groupName>
+    </membership>
+    <membership>
+      <userName>elena.torres</userName>
+      <roleName>Recepcionista</roleName>
+      <groupName>RecepcionAtencionCliente</groupName>
+    </membership>
+    <membership>
+      <userName>marcos.silva</userName>
+      <roleName>Recepcionista</roleName>
+      <groupName>RecepcionAtencionCliente</groupName>
+    </membership>
+    <membership>
+      <userName>sofia.navarro</userName>
+      <roleName>Recepcionista</roleName>
+      <groupName>RecepcionAtencionCliente</groupName>
+    </membership>
+    <membership>
+      <userName>raul.jimenez</userName>
+      <roleName>MonitorPadel</roleName>
+      <groupName>AreaDeportiva</groupName>
+    </membership>
+    <membership>
+      <userName>ana.beltran</userName>
+      <roleName>MonitorTenis</roleName>
+      <groupName>AreaDeportiva</groupName>
+    </membership>
+    <membership>
+      <userName>sergio.vega</userName>
+      <roleName>MonitorFutbol</roleName>
+      <groupName>AreaDeportiva</groupName>
+    </membership>
+    <membership>
+      <userName>clara.ortiz</userName>
+      <roleName>MonitorGimnasio</roleName>
+      <groupName>AreaDeportiva</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
