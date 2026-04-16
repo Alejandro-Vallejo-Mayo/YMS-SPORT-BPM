@@ -12,30 +12,252 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_pjcsWDJnEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_pjcsWTJnEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_pjcsWjJnEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_VADKQDl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_VADKQTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_VADKQjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_VADKQzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.nombre" content="alta_nuevo_socioInput?.nombre" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_VADKRDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_VADKRTl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setNombre">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_VADKRjl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_VADKRzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_VADKSDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_VADKSTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.apellidos" content="alta_nuevo_socioInput?.apellidos" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_VADKSjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_VADKSzl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setApellidos">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_VADKTDl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_VADKTTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_VADKTjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_VADKTzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.fecha_nacimiento" content="alta_nuevo_socioInput?.fecha_nacimiento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_VADKUDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_VADKUTl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setFecha_nacimiento">
+              <inputTypes>java.time.LocalDate</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_VADKUjl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_VADKUzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_VADKVDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_VADKVTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.correo" content="alta_nuevo_socioInput?.correo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_VADKVjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_VADKVzl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setCorreo">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_VADKWDl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_VADKWTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_VADKWjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_VADKWzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.telefono" content="alta_nuevo_socioInput?.telefono" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_VADKXDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_VADKXTl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setTelefono">
+              <inputTypes>java.lang.Integer</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_VADKXjl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_VADKXzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_VADKYDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_VADKYTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.dni" content="alta_nuevo_socioInput?.dni" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_VADKYjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_VADKYzl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setDni">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_VADKZDl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_VADKZTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_VADKZjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_VADKZzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.iban" content="alta_nuevo_socioInput?.iban" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_VADKaDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_VADKaTl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setIban">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_VADKajl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_VADKazl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_VADKbDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_VADKbTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.validacion" content="alta_nuevo_socioInput?.validacion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_VADKbjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_VADKbzl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setValidacion">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_VADKcDl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_VADKcTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_VADKcjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_VADKczl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.bienvenida" content="alta_nuevo_socioInput?.bienvenida" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_VADKdDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_VADKdTl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setBienvenida">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_pjcsWzJnEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_pjcsXDJnEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_pjcsXTJnEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_pjcsXjJnEfGbp_i4xmOvOg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_pjcsXzJnEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_pjcsYDJnEfGbp_i4xmOvOg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_pjcsYTJnEfGbp_i4xmOvOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_WoOpADl5EfGt0r3TWDzyZQ" name="RegistrarAltaForm" content="c67a58da-0295-4678-89d2-365a27e4e748" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_pjcsYjJnEfGbp_i4xmOvOg"/>
+          <contract xmi:type="process:Contract" xmi:id="_pjcsYjJnEfGbp_i4xmOvOg">
+            <inputs xmi:type="process:ContractInput" xmi:id="_VACjMDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" dataReference="alta_nuevo_socio" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_VACjMTl5EfGt0r3TWDzyZQ" name="nombre" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_VACjMjl5EfGt0r3TWDzyZQ" name="apellidos" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_VACjMzl5EfGt0r3TWDzyZQ" name="fecha_nacimiento" type="LOCALDATE" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_VACjNDl5EfGt0r3TWDzyZQ" name="correo" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_VACjNTl5EfGt0r3TWDzyZQ" name="telefono" type="INTEGER" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_VACjNjl5EfGt0r3TWDzyZQ" name="dni" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_VACjNzl5EfGt0r3TWDzyZQ" name="iban" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_VACjODl5EfGt0r3TWDzyZQ" name="validacion" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_VACjOTl5EfGt0r3TWDzyZQ" name="bienvenida" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_pjcsYzJnEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_UPfxEDJoEfGbp_i4xmOvOg" name="Entregar bienvenida" outgoing="_ZdjKUDJoEfGbp_i4xmOvOg" incoming="_XwtOADJoEfGbp_i4xmOvOg" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_UPfxEjJoEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_UPfxETJoEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_UPfxEzJoEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_1k0dCjl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_1k0dCzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1k0dDDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_1k0dDTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.nombre" content="alta_nuevo_socioInput?.nombre" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_1k0dDjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_1k0dDzl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setNombre">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_1k0dEDl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_1k0dETl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1k0dEjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_1k0dEzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.apellidos" content="alta_nuevo_socioInput?.apellidos" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_1k0dFDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_1k0dFTl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setApellidos">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_1k0dFjl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_1k0dFzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1k0dGDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_1k0dGTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.fecha_nacimiento" content="alta_nuevo_socioInput?.fecha_nacimiento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_1k0dGjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_1k0dGzl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setFecha_nacimiento">
+              <inputTypes>java.time.LocalDate</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_1k0dHDl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_1k0dHTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1k0dHjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_1k0dHzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.correo" content="alta_nuevo_socioInput?.correo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_1k0dIDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_1k0dITl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setCorreo">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_1k0dIjl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_1k0dIzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1k0dJDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_1k0dJTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.telefono" content="alta_nuevo_socioInput?.telefono" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_1k0dJjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_1k0dJzl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setTelefono">
+              <inputTypes>java.lang.Integer</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_1k0dKDl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_1k0dKTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1k0dKjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_1k0dKzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.dni" content="alta_nuevo_socioInput?.dni" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_1k0dLDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_1k0dLTl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setDni">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_1k0dLjl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_1k0dLzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1k0dMDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_1k0dMTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.iban" content="alta_nuevo_socioInput?.iban" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_1k0dMjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_1k0dMzl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setIban">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_1k0dNDl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_1k0dNTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1k0dNjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_1k0dNzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.validacion" content="alta_nuevo_socioInput?.validacion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_1k0dODl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_1k0dOTl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setValidacion">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_1k0dOjl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_1k0dOzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1k0dPDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_1k0dPTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.bienvenida" content="alta_nuevo_socioInput?.bienvenida" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_1k0dPjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_1k0dPzl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setBienvenida">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_UPfxFDJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_UPfxFTJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_UPfxFjJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_UPfxGDJoEfGbp_i4xmOvOg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_UPfxFzJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_UPfxGjJoEfGbp_i4xmOvOg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_UPfxGzJoEfGbp_i4xmOvOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_2G52YDl5EfGt0r3TWDzyZQ" name="BienvenidaAltaForm" content="4a148d92-5638-4cc8-b701-82febea14833" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_UPfxGTJoEfGbp_i4xmOvOg"/>
+          <contract xmi:type="process:Contract" xmi:id="_UPfxGTJoEfGbp_i4xmOvOg">
+            <inputs xmi:type="process:ContractInput" xmi:id="_1k0dADl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" dataReference="alta_nuevo_socio" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_1k0dATl5EfGt0r3TWDzyZQ" name="nombre" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_1k0dAjl5EfGt0r3TWDzyZQ" name="apellidos" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_1k0dAzl5EfGt0r3TWDzyZQ" name="fecha_nacimiento" type="LOCALDATE" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_1k0dBDl5EfGt0r3TWDzyZQ" name="correo" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_1k0dBTl5EfGt0r3TWDzyZQ" name="telefono" type="INTEGER" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_1k0dBjl5EfGt0r3TWDzyZQ" name="dni" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_1k0dBzl5EfGt0r3TWDzyZQ" name="iban" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_1k0dCDl5EfGt0r3TWDzyZQ" name="validacion" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_1k0dCTl5EfGt0r3TWDzyZQ" name="bienvenida" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_UPfxHDJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_YR0-EDJoEfGbp_i4xmOvOg" name="Fin" incoming="_ZdjKUDJoEfGbp_i4xmOvOg">
@@ -49,15 +271,126 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_E1VJIjJoEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_E1VJITJoEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_E1VJIzJoEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_mm_Lyjl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_mm_Lyzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mm_LzDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_mm_LzTl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.nombre" content="alta_nuevo_socioInput?.nombre" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_mm_Lzjl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_mm_Lzzl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setNombre">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_mm_L0Dl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_mm_L0Tl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mm_L0jl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_mm_L0zl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.apellidos" content="alta_nuevo_socioInput?.apellidos" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_mm_L1Dl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_mm_L1Tl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setApellidos">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_mm_L1jl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_mm_L1zl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mm_L2Dl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_mm_L2Tl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.fecha_nacimiento" content="alta_nuevo_socioInput?.fecha_nacimiento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_mm_L2jl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_mm_L2zl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setFecha_nacimiento">
+              <inputTypes>java.time.LocalDate</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_mm_L3Dl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_mm_L3Tl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mm_L3jl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_mm_L3zl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.correo" content="alta_nuevo_socioInput?.correo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_mm_L4Dl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_mm_L4Tl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setCorreo">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_mm_L4jl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_mm_L4zl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mm_L5Dl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_mm_L5Tl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.telefono" content="alta_nuevo_socioInput?.telefono" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_mm_L5jl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_mm_L5zl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setTelefono">
+              <inputTypes>java.lang.Integer</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_mm_L6Dl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_mm_L6Tl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mm_L6jl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_mm_L6zl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.dni" content="alta_nuevo_socioInput?.dni" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_mm_L7Dl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_mm_L7Tl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setDni">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_mm_L7jl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_mm_L7zl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mm_L8Dl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_mm_L8Tl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.iban" content="alta_nuevo_socioInput?.iban" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_mm_L8jl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_mm_L8zl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setIban">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_mm_L9Dl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_mm_L9Tl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mm_L9jl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_mm_L9zl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.validacion" content="alta_nuevo_socioInput?.validacion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_mm_L-Dl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_mm_L-Tl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setValidacion">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_mm_L-jl5EfGt0r3TWDzyZQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_mm_L-zl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" content="alta_nuevo_socio" type="TYPE_VARIABLE" returnType="com.company.model.AltaNuevoSocio">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mm_L_Dl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_mm_L_Tl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput.bienvenida" content="alta_nuevo_socioInput?.bienvenida" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_mm_L_jl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_mm_L_zl5EfGt0r3TWDzyZQ" type="JAVA_METHOD" expression="setBienvenida">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_E1VJJDJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_E1VJJTJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_E1VJJjJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_E1VJKDJoEfGbp_i4xmOvOg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_E1VJJzJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_E1VJKjJoEfGbp_i4xmOvOg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_E1VJKzJoEfGbp_i4xmOvOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_nFg60Dl5EfGt0r3TWDzyZQ" name="ValidacionAltaForm" content="2de3b79c-fda0-4084-860e-0e3100357ae0" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_E1VJKTJoEfGbp_i4xmOvOg"/>
+          <contract xmi:type="process:Contract" xmi:id="_E1VJKTJoEfGbp_i4xmOvOg">
+            <inputs xmi:type="process:ContractInput" xmi:id="_mm_LwDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" dataReference="alta_nuevo_socio" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_mm_LwTl5EfGt0r3TWDzyZQ" name="nombre" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_mm_Lwjl5EfGt0r3TWDzyZQ" name="apellidos" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_mm_Lwzl5EfGt0r3TWDzyZQ" name="fecha_nacimiento" type="LOCALDATE" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_mm_LxDl5EfGt0r3TWDzyZQ" name="correo" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_mm_LxTl5EfGt0r3TWDzyZQ" name="telefono" type="INTEGER" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_mm_Lxjl5EfGt0r3TWDzyZQ" name="dni" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_mm_Lxzl5EfGt0r3TWDzyZQ" name="iban" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_mm_LyDl5EfGt0r3TWDzyZQ" name="validacion" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_mm_LyTl5EfGt0r3TWDzyZQ" name="bienvenida" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_E1VJLDJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:ServiceTask" xmi:id="_IjPlUDJoEfGbp_i4xmOvOg" name="Crear socio y suscripción" outgoing="_XwtOADJoEfGbp_i4xmOvOg" incoming="_PKEvYDJoEfGbp_i4xmOvOg">
@@ -71,6 +404,11 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_IjPlVzJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_Bim6IDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socio" dataType="_pjcshDJnEfGbp_i4xmOvOg" className="com.company.model.AltaNuevoSocio">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_TMNOGjl5EfGt0r3TWDzyZQ" name="initAlta_nuevo_socio()" content="def altaNuevoSocioVar = new com.company.model.AltaNuevoSocio()&#xD;&#xA;altaNuevoSocioVar.nombre = alta_nuevo_socioInput?.nombre&#xD;&#xA;altaNuevoSocioVar.apellidos = alta_nuevo_socioInput?.apellidos&#xD;&#xA;altaNuevoSocioVar.fecha_nacimiento = alta_nuevo_socioInput?.fecha_nacimiento&#xD;&#xA;altaNuevoSocioVar.correo = alta_nuevo_socioInput?.correo&#xD;&#xA;altaNuevoSocioVar.telefono = alta_nuevo_socioInput?.telefono&#xD;&#xA;altaNuevoSocioVar.dni = alta_nuevo_socioInput?.dni&#xD;&#xA;altaNuevoSocioVar.iban = alta_nuevo_socioInput?.iban&#xD;&#xA;altaNuevoSocioVar.validacion = alta_nuevo_socioInput?.validacion&#xD;&#xA;altaNuevoSocioVar.bienvenida = alta_nuevo_socioInput?.bienvenida&#xD;&#xA;return altaNuevoSocioVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.AltaNuevoSocio">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_TMNOGzl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX"/>
+        </defaultValue>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_pjcsZDJnEfGbp_i4xmOvOg">
         <targetForm xmi:type="expression:Expression" xmi:id="_pjcsZTJnEfGbp_i4xmOvOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -98,7 +436,19 @@
         <condition xmi:type="expression:Expression" xmi:id="_ZdjKUjJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_pjcsazJnEfGbp_i4xmOvOg" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor" initiator="true"/>
-      <contract xmi:type="process:Contract" xmi:id="_pjcsbDJnEfGbp_i4xmOvOg"/>
+      <contract xmi:type="process:Contract" xmi:id="_pjcsbDJnEfGbp_i4xmOvOg">
+        <inputs xmi:type="process:ContractInput" xmi:id="_TMNOEDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" dataReference="alta_nuevo_socio">
+          <inputs xmi:type="process:ContractInput" xmi:id="_TMNOETl5EfGt0r3TWDzyZQ" name="nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_TMNOEjl5EfGt0r3TWDzyZQ" name="apellidos"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_TMNOEzl5EfGt0r3TWDzyZQ" name="fecha_nacimiento" type="LOCALDATE"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_TMNOFDl5EfGt0r3TWDzyZQ" name="correo"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_TMNOFTl5EfGt0r3TWDzyZQ" name="telefono" type="INTEGER"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_TMNOFjl5EfGt0r3TWDzyZQ" name="dni"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_TMNOFzl5EfGt0r3TWDzyZQ" name="iban"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_TMNOGDl5EfGt0r3TWDzyZQ" name="validacion" type="BOOLEAN"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_TMNOGTl5EfGt0r3TWDzyZQ" name="bienvenida" type="BOOLEAN"/>
+        </inputs>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_pjcsbTJnEfGbp_i4xmOvOg">
         <name xmi:type="expression:Expression" xmi:id="_pjcsbjJnEfGbp_i4xmOvOg" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_pjcsbzJnEfGbp_i4xmOvOg" content="" returnTypeFixed="true"/>
