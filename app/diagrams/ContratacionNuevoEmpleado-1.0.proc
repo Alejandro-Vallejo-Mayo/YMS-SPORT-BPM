@@ -107,11 +107,11 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_R7-9sDJlEfGbp_i4xmOvOg" name="NO" target="_QproUDJlEfGbp_i4xmOvOg" source="_KBM4cDJlEfGbp_i4xmOvOg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_R7-9sTJlEfGbp_i4xmOvOg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_R7-9sjJlEfGbp_i4xmOvOg" name="!monitor" content="!monitor" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_R7-9sjJlEfGbp_i4xmOvOg" name="!puesto_trabajo.contains(&quot;monitor&quot;)" content="!puesto_trabajo.contains(&quot;monitor&quot;)" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_eDcewDJlEfGbp_i4xmOvOg" name="SI" target="_aEnRsDJlEfGbp_i4xmOvOg" source="_KBM4cDJlEfGbp_i4xmOvOg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_eDcewTJlEfGbp_i4xmOvOg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_eDcewjJlEfGbp_i4xmOvOg" name="monitor" content="monitor" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_eDcewjJlEfGbp_i4xmOvOg" name="puesto_trabajo.contains(&quot;monitor&quot;)" content="puesto_trabajo.contains(&quot;monitor&quot;)" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_ltR98DJlEfGbp_i4xmOvOg" target="_jH3a4DJlEfGbp_i4xmOvOg" source="_aEnRsDJlEfGbp_i4xmOvOg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_ltR98TJlEfGbp_i4xmOvOg"/>
