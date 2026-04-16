@@ -7,15 +7,78 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_qCd4YiK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_qCd4YSK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_qCd4YyK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_Z84dZjmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Z84dZzmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Z84daDmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Z84daTmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.articulo" content="gestion_incidenciaInput?.articulo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Z84dajmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Z84dazmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setArticulo">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Z84dbDmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Z84dbTmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Z84dbjmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Z84dbzmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.estado" content="gestion_incidenciaInput?.estado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Z84dcDmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Z84dcTmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setEstado">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Z84dcjmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Z84dczmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Z84ddDmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Z84ddTmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.descripcion" content="gestion_incidenciaInput?.descripcion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Z84ddjmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Z84ddzmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setDescripcion">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Z84deDmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Z84deTmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Z84dejmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Z84dezmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.coste_reparacion" content="gestion_incidenciaInput?.coste_reparacion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Double">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Z84dfDmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Z84dfTmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setCoste_reparacion">
+              <inputTypes>java.lang.Double</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Z84dfjmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Z84dfzmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Z84dgDmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Z84dgTmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.aprobacion_gerencia" content="gestion_incidenciaInput?.aprobacion_gerencia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Z84dgjmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Z84dgzmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setAprobacion_gerencia">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_qCd4ZCK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_qCd4ZSK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_qCd4ZiK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_qCd4aCK1EfGWqKGgh9Hk-w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_qCd4ZyK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_qCd4aiK1EfGWqKGgh9Hk-w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_qCd4ayK1EfGWqKGgh9Hk-w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_aYieoDmJEfGUvLzC5hRCgg" name="ReportarRoturaForm" content="c893cf42-a2b3-4502-abb5-d661d3ccffc1" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_qCd4aSK1EfGWqKGgh9Hk-w"/>
+          <contract xmi:type="process:Contract" xmi:id="_qCd4aSK1EfGWqKGgh9Hk-w">
+            <inputs xmi:type="process:ContractInput" xmi:id="_Z84dYDmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" dataReference="gestion_incidencia" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_Z84dYTmJEfGUvLzC5hRCgg" name="articulo" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Z84dYjmJEfGUvLzC5hRCgg" name="estado" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Z84dYzmJEfGUvLzC5hRCgg" name="descripcion" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Z84dZDmJEfGUvLzC5hRCgg" name="coste_reparacion" type="DECIMAL" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Z84dZTmJEfGUvLzC5hRCgg" name="aprobacion_gerencia" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_qCd4bCK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartEvent" xmi:id="_qCfGgyK1EfGWqKGgh9Hk-w" name="Inicio" outgoing="_qDfzICK1EfGWqKGgh9Hk-w">
@@ -29,30 +92,156 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_qCwMSyK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_qCwMSiK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_qCwMTCK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_eyYzxjmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_eyYzxzmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_eyYzyDmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_eyYzyTmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.articulo" content="gestion_incidenciaInput?.articulo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_eyYzyjmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_eyYzyzmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setArticulo">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_eyYzzDmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_eyYzzTmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_eyYzzjmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_eyYzzzmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.estado" content="gestion_incidenciaInput?.estado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_eyYz0DmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_eyYz0TmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setEstado">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_eyYz0jmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_eyYz0zmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_eyYz1DmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_eyYz1TmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.descripcion" content="gestion_incidenciaInput?.descripcion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_eyYz1jmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_eyYz1zmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setDescripcion">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_eyYz2DmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_eyYz2TmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_eyYz2jmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_eyYz2zmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.coste_reparacion" content="gestion_incidenciaInput?.coste_reparacion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Double">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_eyYz3DmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_eyYz3TmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setCoste_reparacion">
+              <inputTypes>java.lang.Double</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_eyYz3jmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_eyYz3zmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_eyYz4DmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_eyYz4TmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.aprobacion_gerencia" content="gestion_incidenciaInput?.aprobacion_gerencia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_eyYz4jmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_eyYz4zmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setAprobacion_gerencia">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_qCwMTSK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_qCwMTiK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_qCwMTyK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_qCwMUSK1EfGWqKGgh9Hk-w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_qCwMUCK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_qCwMUyK1EfGWqKGgh9Hk-w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_qCwMVCK1EfGWqKGgh9Hk-w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_fNMgcDmJEfGUvLzC5hRCgg" name="EvaluarCosteForm" content="ef343a23-ffbd-417c-b79c-a523ff050447" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_qCwMUiK1EfGWqKGgh9Hk-w"/>
+          <contract xmi:type="process:Contract" xmi:id="_qCwMUiK1EfGWqKGgh9Hk-w">
+            <inputs xmi:type="process:ContractInput" xmi:id="_eyYzwDmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" dataReference="gestion_incidencia" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_eyYzwTmJEfGUvLzC5hRCgg" name="articulo" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_eyYzwjmJEfGUvLzC5hRCgg" name="estado" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_eyYzwzmJEfGUvLzC5hRCgg" name="descripcion" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_eyYzxDmJEfGUvLzC5hRCgg" name="coste_reparacion" type="DECIMAL" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_eyYzxTmJEfGUvLzC5hRCgg" name="aprobacion_gerencia" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_qCwMVSK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_qC4IECK1EfGWqKGgh9Hk-w" name="Reparar de forma directa" outgoing="_qDpkISK1EfGWqKGgh9Hk-w" incoming="_qDfzKCK1EfGWqKGgh9Hk-w _F069gDlxEfGt0r3TWDzyZQ" overrideActorsOfTheLane="false" priority="1">
+        <elements xmi:type="process:Task" xmi:id="_qC4IECK1EfGWqKGgh9Hk-w" name="Reparar" outgoing="_qDpkISK1EfGWqKGgh9Hk-w" incoming="_qDfzKCK1EfGWqKGgh9Hk-w _F069gDlxEfGt0r3TWDzyZQ" overrideActorsOfTheLane="false" priority="1">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_qC4IEiK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_qC4IESK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_qC4IEyK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_0GK6djmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_0GK6dzmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_0GK6eDmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_0GK6eTmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.articulo" content="gestion_incidenciaInput?.articulo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_0GK6ejmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_0GK6ezmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setArticulo">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_0GK6fDmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_0GK6fTmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_0GK6fjmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_0GK6fzmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.estado" content="gestion_incidenciaInput?.estado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_0GK6gDmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_0GK6gTmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setEstado">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_0GK6gjmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_0GK6gzmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_0GK6hDmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_0GK6hTmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.descripcion" content="gestion_incidenciaInput?.descripcion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_0GK6hjmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_0GK6hzmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setDescripcion">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_0GK6iDmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_0GK6iTmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_0GK6ijmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_0GK6izmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.coste_reparacion" content="gestion_incidenciaInput?.coste_reparacion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Double">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_0GK6jDmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_0GK6jTmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setCoste_reparacion">
+              <inputTypes>java.lang.Double</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_0GK6jjmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_0GK6jzmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_0GK6kDmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_0GK6kTmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.aprobacion_gerencia" content="gestion_incidenciaInput?.aprobacion_gerencia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_0GK6kjmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_0GK6kzmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setAprobacion_gerencia">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_qC4IFCK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_qC4IFSK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_qC5WMCK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_qC5WMiK1EfGWqKGgh9Hk-w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_qC5WMSK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_qC5WNCK1EfGWqKGgh9Hk-w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_qC5WNSK1EfGWqKGgh9Hk-w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_0Y8sgDmJEfGUvLzC5hRCgg" name="RepararForm" content="e0207f3a-be0c-4a7c-851e-b224657d9c92" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_qC5WMyK1EfGWqKGgh9Hk-w"/>
+          <contract xmi:type="process:Contract" xmi:id="_qC5WMyK1EfGWqKGgh9Hk-w">
+            <inputs xmi:type="process:ContractInput" xmi:id="_0GK6cDmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" dataReference="gestion_incidencia" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_0GK6cTmJEfGUvLzC5hRCgg" name="articulo" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_0GK6cjmJEfGUvLzC5hRCgg" name="estado" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_0GK6czmJEfGUvLzC5hRCgg" name="descripcion" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_0GK6dDmJEfGUvLzC5hRCgg" name="coste_reparacion" type="DECIMAL" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_0GK6dTmJEfGUvLzC5hRCgg" name="aprobacion_gerencia" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_qC5WNiK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_qC7ycCK1EfGWqKGgh9Hk-w" name="Fin 1" incoming="_qDpkISK1EfGWqKGgh9Hk-w _LpQToDlxEfGt0r3TWDzyZQ">
@@ -71,15 +260,78 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_qDMRIiK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_qDMRISK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_qDMRIyK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_uRwr1jmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_uRwr1zmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_uRwr2DmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_uRwr2TmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.articulo" content="gestion_incidenciaInput?.articulo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_uRwr2jmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_uRwr2zmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setArticulo">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_uRwr3DmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_uRwr3TmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_uRwr3jmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_uRwr3zmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.estado" content="gestion_incidenciaInput?.estado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_uRwr4DmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_uRwr4TmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setEstado">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_uRwr4jmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_uRwr4zmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_uRwr5DmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_uRwr5TmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.descripcion" content="gestion_incidenciaInput?.descripcion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_uRwr5jmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_uRwr5zmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setDescripcion">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_uRwr6DmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_uRwr6TmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_uRwr6jmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_uRwr6zmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.coste_reparacion" content="gestion_incidenciaInput?.coste_reparacion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Double">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_uRwr7DmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_uRwr7TmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setCoste_reparacion">
+              <inputTypes>java.lang.Double</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_uRwr7jmJEfGUvLzC5hRCgg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_uRwr7zmJEfGUvLzC5hRCgg" name="gestion_incidencia" content="gestion_incidencia" type="TYPE_VARIABLE" returnType="com.company.model.GestionIncidencia">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_uRwr8DmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_uRwr8TmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput.aprobacion_gerencia" content="gestion_incidenciaInput?.aprobacion_gerencia" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_uRwr8jmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_uRwr8zmJEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setAprobacion_gerencia">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_qDMRJCK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_qDMRJSK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_qDMRJiK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_qDMRKCK1EfGWqKGgh9Hk-w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_qDMRJyK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_qDMRKiK1EfGWqKGgh9Hk-w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_qDMRKyK1EfGWqKGgh9Hk-w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_um-G0DmJEfGUvLzC5hRCgg" name="AporbacionGerenciaForm" content="329d066c-a8af-4029-9c8e-281accbca5cd" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_qDMRKSK1EfGWqKGgh9Hk-w"/>
+          <contract xmi:type="process:Contract" xmi:id="_qDMRKSK1EfGWqKGgh9Hk-w">
+            <inputs xmi:type="process:ContractInput" xmi:id="_uRwr0DmJEfGUvLzC5hRCgg" name="gestion_incidenciaInput" type="COMPLEX" dataReference="gestion_incidencia" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_uRwr0TmJEfGUvLzC5hRCgg" name="articulo" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_uRwr0jmJEfGUvLzC5hRCgg" name="estado" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_uRwr0zmJEfGUvLzC5hRCgg" name="descripcion" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_uRwr1DmJEfGUvLzC5hRCgg" name="coste_reparacion" type="DECIMAL" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_uRwr1TmJEfGUvLzC5hRCgg" name="aprobacion_gerencia" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_qDMRLCK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_DX-Z8DlxEfGt0r3TWDzyZQ" name="Compuerta1" outgoing="_F069gDlxEfGt0r3TWDzyZQ _LpQToDlxEfGt0r3TWDzyZQ" incoming="_E5LG8DlxEfGt0r3TWDzyZQ">
@@ -88,6 +340,9 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_DX_oEjlxEfGt0r3TWDzyZQ" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_YsQjADmJEfGUvLzC5hRCgg" name="gestion_incidencia" dataType="_qBBt-CK1EfGWqKGgh9Hk-w" className="com.company.model.GestionIncidencia">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_YsQjATmJEfGUvLzC5hRCgg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_qB6e0CK1EfGWqKGgh9Hk-w">
         <targetForm xmi:type="expression:Expression" xmi:id="_qB6e0SK1EfGWqKGgh9Hk-w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
