@@ -2,9 +2,9 @@
   "id" : "EncuestaForm",
   "name" : "EncuestaForm",
   "type" : "form",
-  "uuid" : "5fe33c48-8823-45e6-b53a-146cbc89d90c",
+  "uuid" : "6aeb5bed-c638-49d0-b903-01a772b4eb95",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776339717056,
+  "lastUpdate" : 1776355320339,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "8ca60908-f10c-450a-9f78-bb77d179cea3",
+        "reference" : "e7f790e9-ab20-4fd9-9a34-b68f03f6f4ff",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "59e38e61-cace-4967-9e13-a4a5ff4d1fd7",
+              "reference" : "717de3cb-b6a1-4ac4-b7e8-8fa14dd93f8a",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "39da9163-8029-4e61-b667-922a81b84c1d",
+              "reference" : "e0f64f5d-b8e7-4776-901a-26c0500f25d1",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "d5e8c3c5-8d9a-464a-a54b-8fdfde3bb09a",
+        "reference" : "63b0d4c4-109c-4578-9bcc-0f23669482a0",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "6e29ddce-18e4-451c-a517-91b8503ae1f1",
+          "reference" : "00abc0af-491e-4aee-a04a-c24d57f99a71",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -165,7 +165,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "cac61c4c-4a90-412e-830d-21132b549b28",
+                "reference" : "bc76666b-39db-40d2-897d-e25253220a9e",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -197,7 +197,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a8200e50-d42e-485a-8e4d-b281e72d5a36",
+                "reference" : "f577f472-9315-4d9e-acbd-6c1659d1ead6",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -285,7 +285,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "80bff082-3261-4709-aa56-38405f44dc23",
+                      "reference" : "e2f0ddc6-8912-4922-9b7b-f338292f19e1",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -375,7 +375,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "3bb844b9-86e7-44d2-842e-025e76335ec6",
+                      "reference" : "25e3861a-86da-4f81-9f77-2262b13e09e3",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -428,7 +428,7 @@
                           "value" : false
                         }
                       },
-                      "reference" : "0fc1e3a2-7a63-4fdf-a997-640e28f249af",
+                      "reference" : "c0098a2e-5580-4954-a5b5-3460616204f7",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
@@ -518,7 +518,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "811970a9-c633-47aa-bf21-1690d32c6271",
+                      "reference" : "87f5825e-c73e-48af-a741-97b6fcaa054b",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -608,7 +608,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "7186a9e4-ec43-4401-b7cf-6c4bcfe99d42",
+                      "reference" : "30f8cb5a-1ffb-4e67-ad04-e770df12538e",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -698,7 +698,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "f0745f50-cea3-46ba-bd02-5f1395933135",
+                      "reference" : "b23c5b20-cb92-46dc-a195-6cbf84bcce8f",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -762,7 +762,7 @@
                           "value" : false
                         }
                       },
-                      "reference" : "a94b7273-058c-4e29-b894-b3714ac3ae78",
+                      "reference" : "24799402-d32a-4826-8ff0-8be1468c8734",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -846,7 +846,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "d9761a91-07b9-4501-a6e2-99673eb8fd86",
+                "reference" : "01e3316e-0937-40fa-9bba-bb3c488c97ec",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -898,7 +898,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2598e6c1-6af0-498e-b55b-01db8850c1c8",
+                "reference" : "a43a4cbe-6d24-4d4b-b37a-f2daff281455",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -976,16 +976,16 @@
   },
   "assets" : [
     {
-      "id" : "7279fac1-b051-43a8-a181-e6efde8d91c9",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "7287f979-1ab4-445a-a355-76f024d74faf",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "e5c35a44-ec7e-4d8a-96e1-edca2d4ec80b",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "9e029897-c3a8-44fc-8644-1c9fdc68ef06",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }

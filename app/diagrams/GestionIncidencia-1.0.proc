@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_qA388CK1EfGWqKGgh9Hk-w" name="GestionIncidencia" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_qB6ewCK1EfGWqKGgh9Hk-w" name="Incidencia">
-      <elements xmi:type="process:Lane" xmi:id="_qCXKsCK1EfGWqKGgh9Hk-w" name="Recepcionista / Monitor / Jardinero">
+      <elements xmi:type="process:Lane" xmi:id="_qCXKsCK1EfGWqKGgh9Hk-w" name="Recepcionista / Monitor / Jardinero" actor="_nV7mgDmnEfGd6sWZB6UPAw">
         <elements xmi:type="process:Task" xmi:id="_qCd4YCK1EfGWqKGgh9Hk-w" name="Reportar rotura" outgoing="_qDz8MCK1EfGWqKGgh9Hk-w" incoming="_qDfzICK1EfGWqKGgh9Hk-w" overrideActorsOfTheLane="false" priority="1">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_qCd4YiK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_qCd4YSK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
@@ -87,7 +87,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_qCfGhiK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_qCwMQCK1EfGWqKGgh9Hk-w" name="Jefe Mantenimiento">
+      <elements xmi:type="process:Lane" xmi:id="_qCwMQCK1EfGWqKGgh9Hk-w" name="Jefe Mantenimiento" actor="_pitAEDmnEfGd6sWZB6UPAw">
         <elements xmi:type="process:Task" xmi:id="_qCwMSSK1EfGWqKGgh9Hk-w" name="Evaluar coste de reparación" outgoing="_qDpkKSK1EfGWqKGgh9Hk-w" incoming="_qDz8MCK1EfGWqKGgh9Hk-w" overrideActorsOfTheLane="false" priority="1">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_qCwMSyK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_qCwMSiK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
@@ -255,7 +255,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_qDDHMyK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_qDDHOCK1EfGWqKGgh9Hk-w" name="Gerente">
+      <elements xmi:type="process:Lane" xmi:id="_qDDHOCK1EfGWqKGgh9Hk-w" name="Gerente" actor="_rQfXkDmnEfGd6sWZB6UPAw">
         <elements xmi:type="process:Task" xmi:id="_qDMRICK1EfGWqKGgh9Hk-w" name="Solicitar aprobación de genrencia" outgoing="_E5LG8DlxEfGt0r3TWDzyZQ" incoming="_qD8fECK1EfGWqKGgh9Hk-w" overrideActorsOfTheLane="false" priority="1">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_qDMRIiK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_qDMRISK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
@@ -385,6 +385,9 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_LpQToTlxEfGt0r3TWDzyZQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_LpQTojlxEfGt0r3TWDzyZQ" name="!aprobacion_gerencia" content="!aprobacion_gerencia" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
+      <actors xmi:type="process:Actor" xmi:id="_nV7mgDmnEfGd6sWZB6UPAw" name="InformadorRotura"/>
+      <actors xmi:type="process:Actor" xmi:id="_pitAEDmnEfGd6sWZB6UPAw" name="EvaluadorRotura"/>
+      <actors xmi:type="process:Actor" xmi:id="_rQfXkDmnEfGd6sWZB6UPAw" name="AprobacionRotura"/>
       <contract xmi:type="process:Contract" xmi:id="_qB6e1CK1EfGWqKGgh9Hk-w"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_qB6ewSK1EfGWqKGgh9Hk-w">
         <name xmi:type="expression:Expression" xmi:id="_qB6ewiK1EfGWqKGgh9Hk-w" content="" returnTypeFixed="true"/>

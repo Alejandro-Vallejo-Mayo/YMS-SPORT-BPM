@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_pjcsUDJnEfGbp_i4xmOvOg" name="AltaNuevoSocio" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_pjcsUTJnEfGbp_i4xmOvOg" name="AltaNuevoSocio">
-      <elements xmi:type="process:Lane" xmi:id="_pjcsUjJnEfGbp_i4xmOvOg" name="Recepcionista" actor="_pjcsazJnEfGbp_i4xmOvOg">
+      <elements xmi:type="process:Lane" xmi:id="_pjcsUjJnEfGbp_i4xmOvOg" name="Recepcionista" actor="_AgyXUDmmEfGd6sWZB6UPAw">
         <elements xmi:type="process:StartEvent" xmi:id="_pjcsUzJnEfGbp_i4xmOvOg" name="Inicio1" outgoing="_pjcsaDJnEfGbp_i4xmOvOg">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_pjcsVDJnEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_pjcsVTJnEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
@@ -266,7 +266,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_YR0-EzJoEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_C5NasDJoEfGbp_i4xmOvOg" name="Gerente">
+      <elements xmi:type="process:Lane" xmi:id="_C5NasDJoEfGbp_i4xmOvOg" name="Gerente" actor="_CoMIsDmmEfGd6sWZB6UPAw">
         <elements xmi:type="process:Task" xmi:id="_E1VJIDJoEfGbp_i4xmOvOg" name="Validar solicitud" outgoing="_PKEvYDJoEfGbp_i4xmOvOg" incoming="_H_CFADJoEfGbp_i4xmOvOg" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_E1VJIjJoEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_E1VJITJoEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
@@ -435,7 +435,8 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_ZdjKUTJoEfGbp_i4xmOvOg"/>
         <condition xmi:type="expression:Expression" xmi:id="_ZdjKUjJoEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_pjcsazJnEfGbp_i4xmOvOg" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_AgyXUDmmEfGd6sWZB6UPAw" name="AdministradorAlta" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_CoMIsDmmEfGd6sWZB6UPAw" name="validadorAlta"/>
       <contract xmi:type="process:Contract" xmi:id="_pjcsbDJnEfGbp_i4xmOvOg">
         <inputs xmi:type="process:ContractInput" xmi:id="_TMNOEDl5EfGt0r3TWDzyZQ" name="alta_nuevo_socioInput" type="COMPLEX" dataReference="alta_nuevo_socio">
           <inputs xmi:type="process:ContractInput" xmi:id="_TMNOETl5EfGt0r3TWDzyZQ" name="nombre"/>
