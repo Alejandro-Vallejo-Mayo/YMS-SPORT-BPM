@@ -441,7 +441,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_qC7ycSK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_qC7ycyK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_qDDHMCK1EfGWqKGgh9Hk-w" name="Compuerta exclusiva" outgoing="_qDfzKCK1EfGWqKGgh9Hk-w _qD8fECK1EfGWqKGgh9Hk-w" incoming="_qDpkKSK1EfGWqKGgh9Hk-w">
+        <elements xmi:type="process:XORGateway" xmi:id="_qDDHMCK1EfGWqKGgh9Hk-w" name="Reparación de más de 50 euros" outgoing="_qDfzKCK1EfGWqKGgh9Hk-w _qD8fECK1EfGWqKGgh9Hk-w" incoming="_qDpkKSK1EfGWqKGgh9Hk-w">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_qDDHMiK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_qDDHMSK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_qDDHMyK1EfGWqKGgh9Hk-w" name="" content="" returnTypeFixed="true"/>
@@ -526,7 +526,7 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_qDMRLCK1EfGWqKGgh9Hk-w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_DX-Z8DlxEfGt0r3TWDzyZQ" name="Compuerta1" outgoing="_F069gDlxEfGt0r3TWDzyZQ _LpQToDlxEfGt0r3TWDzyZQ" incoming="_E5LG8DlxEfGt0r3TWDzyZQ">
+        <elements xmi:type="process:XORGateway" xmi:id="_DX-Z8DlxEfGt0r3TWDzyZQ" name="Aprobación de gerencia" outgoing="_F069gDlxEfGt0r3TWDzyZQ _LpQToDlxEfGt0r3TWDzyZQ" incoming="_E5LG8DlxEfGt0r3TWDzyZQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_DX_oETlxEfGt0r3TWDzyZQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_DX_oEDlxEfGt0r3TWDzyZQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_DX_oEjlxEfGt0r3TWDzyZQ" name="" content="" returnTypeFixed="true"/>

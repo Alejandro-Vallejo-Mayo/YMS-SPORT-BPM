@@ -403,7 +403,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_B9IQqjo5EfGKuZME8ejxFw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_B9IQqzo5EfGKuZME8ejxFw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_B9IQrDo5EfGKuZME8ejxFw" name="Compuerta exclusiva" outgoing="_B9IQxjo5EfGKuZME8ejxFw _B9IQyjo5EfGKuZME8ejxFw" incoming="_B9IQwzo5EfGKuZME8ejxFw">
+        <elements xmi:type="process:XORGateway" xmi:id="_B9IQrDo5EfGKuZME8ejxFw" name="Validación de solicitud" outgoing="_B9IQxjo5EfGKuZME8ejxFw _B9IQyjo5EfGKuZME8ejxFw" incoming="_B9IQwzo5EfGKuZME8ejxFw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_B9IQrTo5EfGKuZME8ejxFw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_B9IQrjo5EfGKuZME8ejxFw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_B9IQrzo5EfGKuZME8ejxFw" name="" content="" returnTypeFixed="true"/>

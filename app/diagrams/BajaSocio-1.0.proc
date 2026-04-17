@@ -535,7 +535,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_MDdknjo1EfGKuZME8ejxFw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_MDdknzo1EfGKuZME8ejxFw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_MDdkoDo1EfGKuZME8ejxFw" name="Compuerta exclusiva" outgoing="_MDdkvzo1EfGKuZME8ejxFw _MDdkwjo1EfGKuZME8ejxFw" incoming="_MDdkvDo1EfGKuZME8ejxFw">
+        <elements xmi:type="process:XORGateway" xmi:id="_MDdkoDo1EfGKuZME8ejxFw" name="Proponer retención" outgoing="_MDdkvzo1EfGKuZME8ejxFw _MDdkwjo1EfGKuZME8ejxFw" incoming="_MDdkvDo1EfGKuZME8ejxFw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_MDdkoTo1EfGKuZME8ejxFw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_MDdkojo1EfGKuZME8ejxFw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_MDdkozo1EfGKuZME8ejxFw" name="" content="" returnTypeFixed="true"/>

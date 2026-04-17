@@ -296,7 +296,7 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_qvizbDJkEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_KBM4cDJlEfGbp_i4xmOvOg" name="Compuerta exclusiva" outgoing="_R7-9sDJlEfGbp_i4xmOvOg _eDcewDJlEfGbp_i4xmOvOg" incoming="_NAgiMDJlEfGbp_i4xmOvOg">
+        <elements xmi:type="process:XORGateway" xmi:id="_KBM4cDJlEfGbp_i4xmOvOg" name="Nuevo empleado monitor" outgoing="_R7-9sDJlEfGbp_i4xmOvOg _eDcewDJlEfGbp_i4xmOvOg" incoming="_NAgiMDJlEfGbp_i4xmOvOg">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_KBOGkTJlEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_KBOGkDJlEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_KBOGkjJlEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
