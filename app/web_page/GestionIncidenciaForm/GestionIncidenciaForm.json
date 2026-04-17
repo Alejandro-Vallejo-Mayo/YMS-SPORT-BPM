@@ -1,115 +1,12 @@
 {
-  "id" : "RepararForm",
-  "name" : "RepararForm",
+  "id" : "GestionIncidenciaForm",
+  "name" : "GestionIncidenciaForm",
   "type" : "form",
-  "uuid" : "e0207f3a-be0c-4a7c-851e-b224657d9c92",
+  "uuid" : "58d84a92-68ed-47bd-8ba8-af617796f4d7",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776414456018,
+  "lastUpdate" : 1776414005790,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
-    [
-      {
-        "type" : "container",
-        "dimension" : {
-          "xs" : 12
-        },
-        "propertyValues" : { },
-        "reference" : "1c8e756e-970a-4ea7-bf78-3859c68bfcbd",
-        "hasValidationError" : false,
-        "id" : "pbContainer",
-        "rows" : [
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "level" : {
-                  "type" : "constant",
-                  "value" : "Level 1"
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "center"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "f47863d6-1b83-43ab-8130-b57a4580c1c9",
-              "hasValidationError" : false,
-              "id" : "pbTitle",
-              "description" : ""
-            }
-          ],
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "allowHtml" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "label" : {
-                  "type" : "interpolation"
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayDescription }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "left"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "294bd25f-806a-4609-8032-9c87ed5f94c7",
-              "hasValidationError" : false,
-              "id" : "pbText",
-              "description" : ""
-            }
-          ]
-        ]
-      }
-    ],
     [
       {
         "type" : "formContainer",
@@ -117,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "04d03e9a-a79f-4282-a147-4ed5ce1ca1dd",
+        "reference" : "930db71c-eb32-4fc5-9190-1bd1ab5c1e30",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +23,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "8416910e-7426-4ee0-a78e-529ed536e45b",
+          "reference" : "b2d687c7-05a2-4d03-a4d5-0b4220865ebf",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -165,7 +62,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2a1cb505-831b-4b43-bd2c-82c480743f88",
+                "reference" : "06c52ebd-f81c-4f8c-bf14-982cd5e2998d",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -197,7 +94,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e9d08505-73e2-4afd-9ec6-b0ed11e4cd68",
+                "reference" : "10319a3a-acf4-4cdc-8727-d70b69046db6",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -233,7 +130,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -252,40 +149,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "gestion_incidencia.articulo"
+                          "value" : "formInput.gestion_incidenciaInput.articulo"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "ed6bb82b-e61d-4fb8-b8d6-791041926c48",
+                      "reference" : "8b0d8a2b-c447-4d43-b32c-fedb494732ab",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -342,40 +213,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "gestion_incidencia.estado"
+                          "value" : "formInput.gestion_incidenciaInput.estado"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "01116ff2-df65-467f-9148-2349941286f3",
+                      "reference" : "e81e4eff-dd53-43df-ba6a-72472a9d36ce",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -413,7 +258,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -432,40 +277,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "gestion_incidencia.descripcion"
+                          "value" : "formInput.gestion_incidenciaInput.descripcion"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "a3d0eb63-37da-4610-bd5a-663811641caa",
+                      "reference" : "8d5a7e8b-109b-404b-9d16-98a4432c51de",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -503,7 +322,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -522,40 +341,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "gestion_incidencia.coste_reparacion"
+                          "value" : "formInput.gestion_incidenciaInput.coste_reparacion"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "4e04551a-9a45-4fb4-927f-f0c4a6624c7b",
+                      "reference" : "4493dbd7-a2e7-4d31-b4d0-b7f2f4fcafb4",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -577,7 +370,7 @@
                         },
                         "hidden" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -585,7 +378,7 @@
                         },
                         "disabled" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -597,18 +390,10 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "gestion_incidencia.aprobacion_gerencia"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
+                          "value" : "formInput.gestion_incidenciaInput.aprobacion_gerencia"
                         }
                       },
-                      "reference" : "4e085428-d05c-4d64-b072-f550e4fffde3",
+                      "reference" : "d813da81-8b8d-46f7-a46e-f46096fcbe39",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
@@ -671,7 +456,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Submit task"
+                    "value" : "Start process"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -692,7 +477,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "cbb6b12e-c0f3-49ce-bf19-0132d4028fa6",
+                "reference" : "404ebcbf-2ad7-4503-a575-f9b54fd90d11",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -744,7 +529,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "007113fc-c8fd-41f2-af08-42e870b98703",
+                "reference" : "0275a543-6643-4540-9121-e92d1244e11d",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -756,10 +541,18 @@
     ]
   ],
   "variables" : {
-    "task" : {
-      "type" : "url",
+    "formInput" : {
+      "type" : "json",
       "value" : [
-        "../API/bpm/userTask/{{taskId}}"
+        "{\r",
+        "  \"gestion_incidenciaInput\" : {\r",
+        "    \"articulo\" : \"\",\r",
+        "    \"estado\" : \"\",\r",
+        "    \"descripcion\" : \"\",\r",
+        "    \"coste_reparacion\" : 0,\r",
+        "    \"aprobacion_gerencia\" : false\r",
+        "  }\r",
+        "}"
       ],
       "exposed" : false
     },
@@ -781,53 +574,23 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.gestion_incidencia ){",
-        "\treturn {",
-        "\t\t//map gestion_incidencia variable to expected task contract input",
-        "\t\tgestion_incidenciaInput: {",
-        "\t\t\tarticulo: $data.gestion_incidencia.articulo !== undefined ? $data.gestion_incidencia.articulo : null,",
-        "\t\t\testado: $data.gestion_incidencia.estado !== undefined ? $data.gestion_incidencia.estado : null,",
-        "\t\t\tdescripcion: $data.gestion_incidencia.descripcion !== undefined ? $data.gestion_incidencia.descripcion : null,",
-        "\t\t\tcoste_reparacion: $data.gestion_incidencia.coste_reparacion !== undefined ? $data.gestion_incidencia.coste_reparacion : null,",
-        "\t\t\taprobacion_gerencia: $data.gestion_incidencia.aprobacion_gerencia !== undefined ? $data.gestion_incidencia.aprobacion_gerencia : null",
-        "\t\t}",
-        "\t}",
+        "return {",
+        "\tgestion_incidenciaInput: $data.formInput.gestion_incidenciaInput",
         "}"
-      ],
-      "exposed" : false
-    },
-    "context" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/userTask/{{taskId}}/context"
-      ],
-      "exposed" : false
-    },
-    "gestion_incidencia" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.gestion_incidencia_ref.link}}"
-      ],
-      "exposed" : false
-    },
-    "taskId" : {
-      "type" : "urlparameter",
-      "value" : [
-        "id"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "6c12ef4b-4a3f-4179-8f5e-cd2eb952d31a",
+      "id" : "5585045f-cb23-450c-b785-fbd7c8f4b735",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "ee642b1b-2fc6-41c7-864b-bf234ed10afe",
+      "id" : "23b0f1cc-0279-454f-b312-1fd0da86beed",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,

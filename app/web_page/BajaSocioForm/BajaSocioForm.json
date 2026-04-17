@@ -1,115 +1,12 @@
 {
-  "id" : "RepararForm",
-  "name" : "RepararForm",
+  "id" : "BajaSocioForm",
+  "name" : "BajaSocioForm",
   "type" : "form",
-  "uuid" : "e0207f3a-be0c-4a7c-851e-b224657d9c92",
+  "uuid" : "2f01b130-0f90-4d76-8b12-4ce8e4b671bf",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776414456018,
+  "lastUpdate" : 1776427685814,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
-    [
-      {
-        "type" : "container",
-        "dimension" : {
-          "xs" : 12
-        },
-        "propertyValues" : { },
-        "reference" : "1c8e756e-970a-4ea7-bf78-3859c68bfcbd",
-        "hasValidationError" : false,
-        "id" : "pbContainer",
-        "rows" : [
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "level" : {
-                  "type" : "constant",
-                  "value" : "Level 1"
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "center"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "f47863d6-1b83-43ab-8130-b57a4580c1c9",
-              "hasValidationError" : false,
-              "id" : "pbTitle",
-              "description" : ""
-            }
-          ],
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "allowHtml" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "label" : {
-                  "type" : "interpolation"
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayDescription }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "left"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "294bd25f-806a-4609-8032-9c87ed5f94c7",
-              "hasValidationError" : false,
-              "id" : "pbText",
-              "description" : ""
-            }
-          ]
-        ]
-      }
-    ],
     [
       {
         "type" : "formContainer",
@@ -117,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "04d03e9a-a79f-4282-a147-4ed5ce1ca1dd",
+        "reference" : "d4c694c1-ab42-4c78-889c-1eb0579fb235",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +23,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "8416910e-7426-4ee0-a78e-529ed536e45b",
+          "reference" : "d78baf73-0e1d-411a-8096-14e192a85d71",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -154,7 +51,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Gestion_incidencia"
+                    "value" : "Baja_socio"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -165,7 +62,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2a1cb505-831b-4b43-bd2c-82c480743f88",
+                "reference" : "5a6adb47-8a67-45a3-8e08-0a378877610e",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -197,7 +94,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e9d08505-73e2-4afd-9ec6-b0ed11e4cd68",
+                "reference" : "2a52fa7e-bfd0-4b7f-993c-7bf1daf98231",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -233,11 +130,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Articulo"
+                          "value" : "Dni"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -252,40 +149,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "gestion_incidencia.articulo"
+                          "value" : "formInput.baja_socioInput.dni"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "ed6bb82b-e61d-4fb8-b8d6-791041926c48",
+                      "reference" : "eabc4cef-e8ea-4224-96f3-508a5542596f",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -327,7 +198,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Estado"
+                          "value" : "Motivo"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -342,40 +213,123 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "gestion_incidencia.estado"
+                          "value" : "formInput.baja_socioInput.motivo"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
+                        }
+                      },
+                      "reference" : "ffa0a844-bd47-4f24-8be2-b68bcf83ba44",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "minLength" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "maxLength" : {
+                        "disabled" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
-                        "debounce" : {
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Retencion"
+                        },
+                        "dimension" : {
                           "type" : "constant",
-                          "value" : 0
+                          "value" : 12
                         },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.baja_socioInput.retencion"
                         }
                       },
-                      "reference" : "01116ff2-df65-467f-9148-2349941286f3",
+                      "reference" : "0a0ae4cf-2161-4dcb-83eb-5148a9ae243e",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Condiciones_retencion"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.baja_socioInput.condiciones_retencion"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "3a1eb696-5bf7-4f00-b168-f97873bc6a45",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -413,11 +367,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Descripcion"
+                          "value" : "Acepta_retencion"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -432,40 +386,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "gestion_incidencia.descripcion"
+                          "value" : "formInput.baja_socioInput.acepta_retencion"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "a3d0eb63-37da-4610-bd5a-663811641caa",
+                      "reference" : "1e88b2d2-a94e-4ead-8917-5baaeed4c454",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -503,11 +431,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Coste_reparacion"
+                          "value" : "Satisfaccion"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -522,40 +450,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "gestion_incidencia.coste_reparacion"
+                          "value" : "formInput.baja_socioInput.satisfaccion"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "4e04551a-9a45-4fb4-927f-f0c4a6624c7b",
+                      "reference" : "79bfcb4a-2097-4b61-8fb5-9e54ac087851",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -577,19 +479,34 @@
                         },
                         "hidden" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "disabled" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Aprobacion_gerencia"
+                          "value" : "Comentario"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -597,20 +514,16 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "gestion_incidencia.aprobacion_gerencia"
+                          "value" : "formInput.baja_socioInput.comentario"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
                         }
                       },
-                      "reference" : "4e085428-d05c-4d64-b072-f550e4fffde3",
+                      "reference" : "fd4a03eb-1e29-4bef-86d1-b60ce0a02c58",
                       "hasValidationError" : false,
-                      "id" : "pbCheckbox",
+                      "id" : "pbInput",
                       "description" : ""
                     }
                   ]
@@ -671,7 +584,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Submit task"
+                    "value" : "Start process"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -692,7 +605,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "cbb6b12e-c0f3-49ce-bf19-0132d4028fa6",
+                "reference" : "d5354676-1d78-4ebb-ae4c-3ee0ec4e8b0e",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -744,7 +657,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "007113fc-c8fd-41f2-af08-42e870b98703",
+                "reference" : "52b07f94-7b33-4180-8ae9-517548294502",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -756,10 +669,20 @@
     ]
   ],
   "variables" : {
-    "task" : {
-      "type" : "url",
+    "formInput" : {
+      "type" : "json",
       "value" : [
-        "../API/bpm/userTask/{{taskId}}"
+        "{\r",
+        "  \"baja_socioInput\" : {\r",
+        "    \"dni\" : \"\",\r",
+        "    \"motivo\" : \"\",\r",
+        "    \"retencion\" : false,\r",
+        "    \"condiciones_retencion\" : \"\",\r",
+        "    \"acepta_retencion\" : \"\",\r",
+        "    \"satisfaccion\" : 0,\r",
+        "    \"comentario\" : \"\"\r",
+        "  }\r",
+        "}"
       ],
       "exposed" : false
     },
@@ -781,53 +704,23 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.gestion_incidencia ){",
-        "\treturn {",
-        "\t\t//map gestion_incidencia variable to expected task contract input",
-        "\t\tgestion_incidenciaInput: {",
-        "\t\t\tarticulo: $data.gestion_incidencia.articulo !== undefined ? $data.gestion_incidencia.articulo : null,",
-        "\t\t\testado: $data.gestion_incidencia.estado !== undefined ? $data.gestion_incidencia.estado : null,",
-        "\t\t\tdescripcion: $data.gestion_incidencia.descripcion !== undefined ? $data.gestion_incidencia.descripcion : null,",
-        "\t\t\tcoste_reparacion: $data.gestion_incidencia.coste_reparacion !== undefined ? $data.gestion_incidencia.coste_reparacion : null,",
-        "\t\t\taprobacion_gerencia: $data.gestion_incidencia.aprobacion_gerencia !== undefined ? $data.gestion_incidencia.aprobacion_gerencia : null",
-        "\t\t}",
-        "\t}",
+        "return {",
+        "\tbaja_socioInput: $data.formInput.baja_socioInput",
         "}"
-      ],
-      "exposed" : false
-    },
-    "context" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/userTask/{{taskId}}/context"
-      ],
-      "exposed" : false
-    },
-    "gestion_incidencia" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.gestion_incidencia_ref.link}}"
-      ],
-      "exposed" : false
-    },
-    "taskId" : {
-      "type" : "urlparameter",
-      "value" : [
-        "id"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "6c12ef4b-4a3f-4179-8f5e-cd2eb952d31a",
+      "id" : "dc87858e-a364-41b2-81fc-5e51707341f0",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "ee642b1b-2fc6-41c7-864b-bf234ed10afe",
+      "id" : "cd347837-0e21-4134-b763-7f7dd4bc362e",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,

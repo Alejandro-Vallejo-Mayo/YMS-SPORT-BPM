@@ -448,10 +448,12 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_SkZpYDmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_SkZpYTmIEfGUvLzC5hRCgg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_Pz7hSzpWEfGug7L0qSEsTw" name="initContratacion_nuevo_empleado()" content="def contratacionNuevoEmpleadoVar = new com.company.model.ContratacionNuevoEmpleado()&#xD;&#xA;contratacionNuevoEmpleadoVar.nombre = contratacion_nuevo_empleadoInput?.nombre&#xD;&#xA;contratacionNuevoEmpleadoVar.apellidos = contratacion_nuevo_empleadoInput?.apellidos&#xD;&#xA;contratacionNuevoEmpleadoVar.fecha_nacimiento = contratacion_nuevo_empleadoInput?.fecha_nacimiento&#xD;&#xA;contratacionNuevoEmpleadoVar.correo = contratacion_nuevo_empleadoInput?.correo&#xD;&#xA;contratacionNuevoEmpleadoVar.telefono = contratacion_nuevo_empleadoInput?.telefono&#xD;&#xA;contratacionNuevoEmpleadoVar.dni = contratacion_nuevo_empleadoInput?.dni&#xD;&#xA;contratacionNuevoEmpleadoVar.iban = contratacion_nuevo_empleadoInput?.iban&#xD;&#xA;contratacionNuevoEmpleadoVar.puesto_trabajo = contratacion_nuevo_empleadoInput?.puesto_trabajo&#xD;&#xA;contratacionNuevoEmpleadoVar.onboarding = contratacion_nuevo_empleadoInput?.onboarding&#xD;&#xA;contratacionNuevoEmpleadoVar.formacion = contratacion_nuevo_empleadoInput?.formacion&#xD;&#xA;return contratacionNuevoEmpleadoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.ContratacionNuevoEmpleado">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_Pz7hTDpWEfGug7L0qSEsTw" name="contratacion_nuevo_empleadoInput" type="COMPLEX"/>
+        </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_xJCMdDJhEfGbp_i4xmOvOg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_xJCMdTJhEfGbp_i4xmOvOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_QU118DpWEfGug7L0qSEsTw" name="ContratacionNuevoEmpleadoForm" content="bf3cf46c-2bc5-4072-ad66-67aa68caafcf" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_xJCMdjJhEfGbp_i4xmOvOg">
         <targetForm xmi:type="expression:Expression" xmi:id="_xJCMdzJhEfGbp_i4xmOvOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -474,11 +476,15 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_R7-9sDJlEfGbp_i4xmOvOg" name="NO" target="_QproUDJlEfGbp_i4xmOvOg" source="_KBM4cDJlEfGbp_i4xmOvOg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_R7-9sTJlEfGbp_i4xmOvOg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_R7-9sjJlEfGbp_i4xmOvOg" name="!puesto_trabajo.contains(&quot;monitor&quot;)" content="!puesto_trabajo.contains(&quot;monitor&quot;)" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_R7-9sjJlEfGbp_i4xmOvOg" name="no monitor" content="!contratacion_nuevo_empleado.puesto_trabajo.contains(&quot;monitor&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_bCqDgDpWEfGug7L0qSEsTw" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_eDcewDJlEfGbp_i4xmOvOg" name="SI" target="_aEnRsDJlEfGbp_i4xmOvOg" source="_KBM4cDJlEfGbp_i4xmOvOg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_eDcewTJlEfGbp_i4xmOvOg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_eDcewjJlEfGbp_i4xmOvOg" name="puesto_trabajo.contains(&quot;monitor&quot;)" content="puesto_trabajo.contains(&quot;monitor&quot;)" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_eDcewjJlEfGbp_i4xmOvOg" name="monitor" content="contratacion_nuevo_empleado.puesto_trabajo.contains(&quot;monitor&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_YGHZ4DpWEfGug7L0qSEsTw" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_N0M4sDmnEfGd6sWZB6UPAw" target="_QproUDJlEfGbp_i4xmOvOg" source="_aEnRsDJlEfGbp_i4xmOvOg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_N0RKIDmnEfGd6sWZB6UPAw"/>
@@ -487,7 +493,20 @@
       <actors xmi:type="process:Actor" xmi:id="_CmsecDmnEfGd6sWZB6UPAw" name="AdministracionIncorporacion" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_GQf2sDmnEfGd6sWZB6UPAw" name="EncargadoOnboarding"/>
       <actors xmi:type="process:Actor" xmi:id="_Hub0UDmnEfGd6sWZB6UPAw" name="EncargadoFormacion"/>
-      <contract xmi:type="process:Contract" xmi:id="_xJCMfDJhEfGbp_i4xmOvOg"/>
+      <contract xmi:type="process:Contract" xmi:id="_xJCMfDJhEfGbp_i4xmOvOg">
+        <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hQDpWEfGug7L0qSEsTw" name="contratacion_nuevo_empleadoInput" type="COMPLEX" dataReference="contratacion_nuevo_empleado">
+          <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hQTpWEfGug7L0qSEsTw" name="nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hQjpWEfGug7L0qSEsTw" name="apellidos"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hQzpWEfGug7L0qSEsTw" name="fecha_nacimiento" type="LOCALDATE"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hRDpWEfGug7L0qSEsTw" name="correo"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hRTpWEfGug7L0qSEsTw" name="telefono" type="INTEGER"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hRjpWEfGug7L0qSEsTw" name="dni"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hRzpWEfGug7L0qSEsTw" name="iban"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hSDpWEfGug7L0qSEsTw" name="puesto_trabajo"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hSTpWEfGug7L0qSEsTw" name="onboarding" type="BOOLEAN"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hSjpWEfGug7L0qSEsTw" name="formacion" type="BOOLEAN"/>
+        </inputs>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_xJCMfTJhEfGbp_i4xmOvOg">
         <name xmi:type="expression:Expression" xmi:id="_xJCMfjJhEfGbp_i4xmOvOg" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_xJCMfzJhEfGbp_i4xmOvOg" content="" returnTypeFixed="true"/>
