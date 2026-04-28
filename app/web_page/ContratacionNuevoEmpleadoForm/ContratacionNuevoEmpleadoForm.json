@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "bf3cf46c-2bc5-4072-ad66-67aa68caafcf",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777392048224,
+  "lastUpdate" : 1777398430331,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -398,7 +398,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Correo"
+                          "value" : "Correo Electrónico"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -811,6 +811,78 @@
                       "id" : "pbInput",
                       "description" : ""
                     }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Instructor Formación"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Select an option"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "instructores_formacion"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant",
+                          "value" : "nombre"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : "username"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.instructor_formacion"
+                        }
+                      },
+                      "reference" : "defefca9-f408-48a7-b14d-e1dceb9430c2",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect"
+                    }
                   ]
                 ]
               }
@@ -968,7 +1040,8 @@
         "    \"iban\" : \"\",\r",
         "    \"puesto_trabajo\" : \"\",\r",
         "    \"onboarding\" : false,\r",
-        "    \"formacion\" : false\r",
+        "    \"formacion\" : false,\r",
+        "    \"instructor_formacion\": \"\"\r",
         "  }\r",
         "}"
       ],
@@ -995,6 +1068,19 @@
         "return {",
         "\tcontratacion_nuevo_empleadoInput: $data.formInput.contratacion_nuevo_empleadoInput",
         "}"
+      ],
+      "exposed" : false
+    },
+    "instructores_formacion" : {
+      "type" : "json",
+      "value" : [
+        "[",
+        "    {\"nombre\": \"Ana Beltran\", \"username\": \"ana.beltran\"},",
+        "    {\"nombre\": \"Clara Ortiz\", \"username\": \"clara.ortiz\"},",
+        "    {\"nombre\": \"Diego Castro\", \"username\": \"diego.castro\"},",
+        "    {\"nombre\": \"Raul Jimenez\", \"username\": \"raul.jimenez\"},",
+        "    {\"nombre\": \"Sergio Vega\", \"username\": \"sergio.vega\"}",
+        "]"
       ],
       "exposed" : false
     }

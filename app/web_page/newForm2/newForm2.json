@@ -1,115 +1,12 @@
 {
-  "id" : "OnboardingForm",
-  "name" : "OnboardingForm",
+  "id" : "newForm2",
+  "name" : "newForm2",
   "type" : "form",
-  "uuid" : "7b8b73f3-2a9c-47f4-8bbf-2682c8f9dedc",
+  "uuid" : "8ff4bbce-6073-4d6a-a3e5-8028d1412e8d",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777397297605,
+  "lastUpdate" : 1777398175517,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
-    [
-      {
-        "type" : "container",
-        "dimension" : {
-          "xs" : 12
-        },
-        "propertyValues" : { },
-        "reference" : "d7307fae-23e6-45d7-a790-c7a5bcc57d86",
-        "hasValidationError" : false,
-        "id" : "pbContainer",
-        "rows" : [
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "level" : {
-                  "type" : "constant",
-                  "value" : "Level 1"
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "center"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "6268396f-075e-4d77-a560-9dc06420ac54",
-              "hasValidationError" : false,
-              "id" : "pbTitle",
-              "description" : ""
-            }
-          ],
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "allowHtml" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "label" : {
-                  "type" : "interpolation"
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayDescription }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "left"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "f83da784-2db9-4093-b358-d2ca2a672288",
-              "hasValidationError" : false,
-              "id" : "pbText",
-              "description" : ""
-            }
-          ]
-        ]
-      }
-    ],
     [
       {
         "type" : "formContainer",
@@ -117,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "1935580b-cfb0-441d-a877-a67c9d532ea6",
+        "reference" : "4e6a8ca0-8a31-4d88-acef-72477d1349b3",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +23,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "7c605c83-725b-4d9c-bbf2-2602a63bb4e8",
+          "reference" : "8a1cc931-f03f-4b92-b2f8-76cd45122084",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -154,7 +51,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Contratación Nuevo Empleado"
+                    "value" : "Contratacion_nuevo_empleado"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -163,13 +60,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
                   }
                 },
-                "reference" : "4e90f65e-a033-46fd-b397-8e4b180b8913",
+                "reference" : "36088140-9d71-4b31-8ef3-5e2bf38c6d2b",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -201,7 +94,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ea76fb77-86b9-4b36-ba06-ecb10e1e236a",
+                "reference" : "f2976b7b-75dd-43cd-a9c8-18ed85a89c16",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -237,7 +130,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -256,40 +149,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "contratacion_nuevo_empleado.nombre"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.nombre"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "2e4d130f-61ee-46ca-9de1-2c8b16ab46ec",
+                      "reference" : "1af3920c-33b4-4be2-8116-a7b8df53f389",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -327,7 +194,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -346,40 +213,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "contratacion_nuevo_empleado.apellidos"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.apellidos"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "ffb7f93f-41ac-4cd0-8181-bebd1e1881d7",
+                      "reference" : "d3dc107e-8b5d-4267-8e8f-36f846d4153b",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -413,11 +254,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Fecha Nacimiento"
+                          "value" : "Fecha_nacimiento"
                         },
                         "type" : {
                           "type" : "constant"
@@ -452,14 +293,10 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "contratacion_nuevo_empleado.fecha_nacimiento"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.fecha_nacimiento"
                         }
                       },
-                      "reference" : "57248058-bae4-49fe-bfda-0eca93b19c05",
+                      "reference" : "ddd9519d-5900-4764-afd5-98b17e4c3da5",
                       "hasValidationError" : false,
                       "id" : "pbDatePicker",
                       "description" : ""
@@ -497,11 +334,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "CorreoElectrónico"
+                          "value" : "Correo"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -516,40 +353,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "contratacion_nuevo_empleado.correo"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.correo"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "ec31af8e-d490-429d-94a7-1659b0a0c91e",
+                      "reference" : "b089e94f-87a2-45f3-8e83-ae0aab4da06c",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -587,11 +398,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Teléfono"
+                          "value" : "Telefono"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -606,40 +417,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "contratacion_nuevo_empleado.telefono"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.telefono"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "194f7e13-135e-4928-8c5b-e419a51d35d1",
+                      "reference" : "c1c08f22-f78f-4338-afec-070962e73097",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -677,11 +462,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "DNI"
+                          "value" : "Dni"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -696,40 +481,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "contratacion_nuevo_empleado.dni"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.dni"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "f3b2a697-20d4-4c05-b52d-98df85c864c8",
+                      "reference" : "2d127e95-8e09-49f9-ab52-d384abdd5f2a",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -767,11 +526,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "IBAN"
+                          "value" : "Iban"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -786,40 +545,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "contratacion_nuevo_empleado.iban"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.iban"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "567f337e-4c33-4bf8-97b1-49bfcbc8ea45",
+                      "reference" : "0e560f58-37c8-4f10-87f3-4c839da9c0d9",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -857,11 +590,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Puesto Trabajo"
+                          "value" : "Puesto_trabajo"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -876,40 +609,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "contratacion_nuevo_empleado.puesto_trabajo"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.puesto_trabajo"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "349da573-5806-418d-9475-f59254141eb3",
+                      "reference" : "5cc8133e-6032-4194-bd27-c1843107e316",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -951,20 +658,121 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "contratacion_nuevo_empleado.onboarding"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.onboarding"
+                        }
+                      },
+                      "reference" : "4fb24aec-df58-495b-bfc8-e837d0ecea7f",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Formacion"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.formacion"
+                        }
+                      },
+                      "reference" : "15bc147d-17b1-463d-98ee-1bee7c116c57",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Instructor_formacion"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.instructor_formacion"
                         },
                         "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         }
                       },
-                      "reference" : "9ba0a5bc-e92d-40d0-a142-40ce226c26c0",
+                      "reference" : "a3f6aa87-ff0b-4ce8-aa53-0e967e99364f",
                       "hasValidationError" : false,
-                      "id" : "pbCheckbox",
+                      "id" : "pbInput",
                       "description" : ""
                     }
                   ]
@@ -1025,7 +833,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Submit task"
+                    "value" : "Start process"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -1046,7 +854,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "384bf540-bfbd-4382-9d3d-598c13dc21c3",
+                "reference" : "2d11b7e3-9bc3-4a0f-a5e5-fe0e43e89566",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -1098,7 +906,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9fa4d5f2-3764-48e7-8490-eba60e6b15f8",
+                "reference" : "85d0fd0f-4317-4d49-be0c-9777eee7a4de",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -1110,10 +918,24 @@
     ]
   ],
   "variables" : {
-    "task" : {
-      "type" : "url",
+    "formInput" : {
+      "type" : "json",
       "value" : [
-        "../API/bpm/userTask/{{taskId}}"
+        "{\r",
+        "  \"contratacion_nuevo_empleadoInput\" : {\r",
+        "    \"nombre\" : \"\",\r",
+        "    \"apellidos\" : \"\",\r",
+        "    \"fecha_nacimiento\" : null,\r",
+        "    \"correo\" : \"\",\r",
+        "    \"telefono\" : 0,\r",
+        "    \"dni\" : \"\",\r",
+        "    \"iban\" : \"\",\r",
+        "    \"puesto_trabajo\" : \"\",\r",
+        "    \"onboarding\" : false,\r",
+        "    \"formacion\" : false,\r",
+        "    \"instructor_formacion\" : \"\"\r",
+        "  }\r",
+        "}"
       ],
       "exposed" : false
     },
@@ -1135,60 +957,25 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.contratacion_nuevo_empleado ){",
-        "\treturn {",
-        "\t\t//map contratacion_nuevo_empleado variable to expected task contract input",
-        "\t\tcontratacion_nuevo_empleadoInput: {",
-        "\t\t\tnombre: $data.contratacion_nuevo_empleado.nombre !== undefined ? $data.contratacion_nuevo_empleado.nombre : null,",
-        "\t\t\tapellidos: $data.contratacion_nuevo_empleado.apellidos !== undefined ? $data.contratacion_nuevo_empleado.apellidos : null,",
-        "\t\t\tfecha_nacimiento: $data.contratacion_nuevo_empleado.fecha_nacimiento !== undefined ? $data.contratacion_nuevo_empleado.fecha_nacimiento : null,",
-        "\t\t\tcorreo: $data.contratacion_nuevo_empleado.correo !== undefined ? $data.contratacion_nuevo_empleado.correo : null,",
-        "\t\t\ttelefono: $data.contratacion_nuevo_empleado.telefono !== undefined ? $data.contratacion_nuevo_empleado.telefono : null,",
-        "\t\t\tdni: $data.contratacion_nuevo_empleado.dni !== undefined ? $data.contratacion_nuevo_empleado.dni : null,",
-        "\t\t\tiban: $data.contratacion_nuevo_empleado.iban !== undefined ? $data.contratacion_nuevo_empleado.iban : null,",
-        "\t\t\tpuesto_trabajo: $data.contratacion_nuevo_empleado.puesto_trabajo !== undefined ? $data.contratacion_nuevo_empleado.puesto_trabajo : null,",
-        "\t\t\tonboarding: $data.contratacion_nuevo_empleado.onboarding !== undefined ? $data.contratacion_nuevo_empleado.onboarding : null,",
-        "\t\t\tformacion: $data.contratacion_nuevo_empleado.formacion !== undefined ? $data.contratacion_nuevo_empleado.formacion : null",
-        "\t\t}",
-        "\t}",
+        "return {",
+        "\tcontratacion_nuevo_empleadoInput: $data.formInput.contratacion_nuevo_empleadoInput",
         "}"
-      ],
-      "exposed" : false
-    },
-    "context" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/userTask/{{taskId}}/context"
-      ],
-      "exposed" : false
-    },
-    "contratacion_nuevo_empleado" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.contratacion_nuevo_empleado_ref.link}}"
-      ],
-      "exposed" : false
-    },
-    "taskId" : {
-      "type" : "urlparameter",
-      "value" : [
-        "id"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "c803a767-b70b-4c71-a4ee-bba44a618be7",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "a3e0d653-11ae-4d92-8f4f-7428c7fc89aa",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "38499848-a1db-48d0-b09d-af64266575db",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "4a3b5c1a-a7f8-4a97-8131-5fbe66d14d27",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }

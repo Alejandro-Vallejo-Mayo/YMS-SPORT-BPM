@@ -530,6 +530,9 @@
           <inputs xmi:type="process:ContractInput" xmi:id="_B9IQ2To5EfGKuZME8ejxFw" name="validacion" type="BOOLEAN"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_B9IQ2jo5EfGKuZME8ejxFw" name="bienvenida" type="BOOLEAN"/>
         </inputs>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_bY4G0EM4EfGj5YWibx2ocw" expression="alta_nuevo_socioInput?.fecha_nacimiento.plusYears(12).isBefore(java.time.LocalDate.now())" name="fecha_nacimiento_valida">
+          <inputNames>alta_nuevo_socioInput</inputNames>
+        </constraints>
         <constraints xmi:type="process:ContractConstraint" xmi:id="_RkhlwEMVEfG2TvNjwEtypg" expression="alta_nuevo_socioInput?.correo.toString().contains(&quot;@&quot;)" name="formato_correo">
           <inputNames>alta_nuevo_socioInput</inputNames>
         </constraints>

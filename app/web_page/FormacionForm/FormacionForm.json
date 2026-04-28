@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "29378a3f-35e4-4ed0-a59f-e43648d608e0",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777392125671,
+  "lastUpdate" : 1777397308879,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -154,7 +154,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Contratacion Nuevo Empleado"
+                    "value" : "Contratación Nuevo Empleado"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -501,7 +501,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Correo"
+                          "value" : "Correo Electrónico"
                         },
                         "placeholder" : {
                           "type" : "constant"
