@@ -558,6 +558,18 @@
           <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hSTpWEfGug7L0qSEsTw" name="onboarding" type="BOOLEAN"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_Pz7hSjpWEfGug7L0qSEsTw" name="formacion" type="BOOLEAN"/>
         </inputs>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_FnoHMEMbEfG2TvNjwEtypg" expression="contratacion_nuevo_empleadoInput?.correo.toString().contains(&quot;@&quot;)" name="formato_correo">
+          <inputNames>contratacion_nuevo_empleadoInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_J7WmMEMbEfG2TvNjwEtypg" expression="contratacion_nuevo_empleadoInput?.telefono.toString().matches(&quot;[0-9]{9}&quot;)" name="formato_telefono">
+          <inputNames>contratacion_nuevo_empleadoInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_PPhOgEMbEfG2TvNjwEtypg" expression="contratacion_nuevo_empleadoInput?.dni.toString().matches(&quot;[0-9]{8}[A-Z]{1}&quot;)" name="formato_dni">
+          <inputNames>contratacion_nuevo_empleadoInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Tznr0EMbEfG2TvNjwEtypg" expression="contratacion_nuevo_empleadoInput?.iban.toString().matches(&quot;[A-Z]{2}[0-9]{22}&quot;)" name="formato_iban">
+          <inputNames>contratacion_nuevo_empleadoInput</inputNames>
+        </constraints>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_xJCMfTJhEfGbp_i4xmOvOg">
         <name xmi:type="expression:Expression" xmi:id="_xJCMfjJhEfGbp_i4xmOvOg" content="" returnTypeFixed="true"/>

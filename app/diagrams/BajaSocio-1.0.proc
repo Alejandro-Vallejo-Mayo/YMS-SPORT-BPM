@@ -60,11 +60,11 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_MDdjszo1EfGKuZME8ejxFw" name="baja_socio" content="baja_socio" type="TYPE_VARIABLE" returnType="com.company.model.BajaSocio">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_MDdjtDo1EfGKuZME8ejxFw" name="baja_socio" dataType="_MDdk3zo1EfGKuZME8ejxFw" className="com.company.model.BajaSocio"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_MDdjtTo1EfGKuZME8ejxFw" name="baja_socioInput.acepta_retencion" content="baja_socioInput?.acepta_retencion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_MDdjtjo1EfGKuZME8ejxFw" name="baja_socioInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_MDdjtTo1EfGKuZME8ejxFw" name="baja_socioInput.acepta_retencion" content="baja_socioInput?.acepta_retencion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_UFvzEEMaEfG2TvNjwEtypg" name="baja_socioInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_MDdjtzo1EfGKuZME8ejxFw" type="JAVA_METHOD" expression="setAcepta_retencion">
-              <inputTypes>java.lang.String</inputTypes>
+              <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_MDdjuDo1EfGKuZME8ejxFw">
@@ -164,11 +164,11 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_MDdj8zo1EfGKuZME8ejxFw" name="baja_socio" content="baja_socio" type="TYPE_VARIABLE" returnType="com.company.model.BajaSocio">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_MDdj9Do1EfGKuZME8ejxFw" name="baja_socio" dataType="_MDdk3zo1EfGKuZME8ejxFw" className="com.company.model.BajaSocio"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_MDdj9To1EfGKuZME8ejxFw" name="baja_socioInput.acepta_retencion" content="baja_socioInput?.acepta_retencion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_MDdj9jo1EfGKuZME8ejxFw" name="baja_socioInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_MDdj9To1EfGKuZME8ejxFw" name="baja_socioInput.acepta_retencion" content="baja_socioInput?.acepta_retencion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_JOzesEMaEfG2TvNjwEtypg" name="baja_socioInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_MDdj9zo1EfGKuZME8ejxFw" type="JAVA_METHOD" expression="setAcepta_retencion">
-              <inputTypes>java.lang.String</inputTypes>
+              <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_MDdj-Do1EfGKuZME8ejxFw">
@@ -266,11 +266,11 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_MDdkMjo1EfGKuZME8ejxFw" name="baja_socio" content="baja_socio" type="TYPE_VARIABLE" returnType="com.company.model.BajaSocio">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_MDdkMzo1EfGKuZME8ejxFw" name="baja_socio" dataType="_MDdk3zo1EfGKuZME8ejxFw" className="com.company.model.BajaSocio"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_MDdkNDo1EfGKuZME8ejxFw" name="baja_socioInput.acepta_retencion" content="baja_socioInput?.acepta_retencion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_MDdkNTo1EfGKuZME8ejxFw" name="baja_socioInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_MDdkNDo1EfGKuZME8ejxFw" name="baja_socioInput.acepta_retencion" content="baja_socioInput?.acepta_retencion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_LxmyoEMaEfG2TvNjwEtypg" name="baja_socioInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_MDdkNjo1EfGKuZME8ejxFw" type="JAVA_METHOD" expression="setAcepta_retencion">
-              <inputTypes>java.lang.String</inputTypes>
+              <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_MDdkNzo1EfGKuZME8ejxFw">
@@ -572,11 +572,11 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_MDdkejo1EfGKuZME8ejxFw" name="baja_socio" content="baja_socio" type="TYPE_VARIABLE" returnType="com.company.model.BajaSocio">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_MDdkezo1EfGKuZME8ejxFw" name="baja_socio" dataType="_MDdk3zo1EfGKuZME8ejxFw" className="com.company.model.BajaSocio"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_MDdkfDo1EfGKuZME8ejxFw" name="baja_socioInput.acepta_retencion" content="baja_socioInput?.acepta_retencion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_MDdkfTo1EfGKuZME8ejxFw" name="baja_socioInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_MDdkfDo1EfGKuZME8ejxFw" name="baja_socioInput.acepta_retencion" content="baja_socioInput?.acepta_retencion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_VdXtUEMaEfG2TvNjwEtypg" name="baja_socioInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_MDdkfjo1EfGKuZME8ejxFw" type="JAVA_METHOD" expression="setAcepta_retencion">
-              <inputTypes>java.lang.String</inputTypes>
+              <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
           <operations xmi:type="expression:Operation" xmi:id="_MDdkfzo1EfGKuZME8ejxFw">
@@ -692,6 +692,9 @@
           <inputs xmi:type="process:ContractInput" xmi:id="_D85o5jpWEfGug7L0qSEsTw" name="satisfaccion" type="INTEGER"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_D85o5zpWEfGug7L0qSEsTw" name="comentario"/>
         </inputs>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_zXtaIEMaEfG2TvNjwEtypg" expression="baja_socioInput?.dni.toString().matches(&quot;[0-9]{8}[A-Z]{1}&quot;)" name="formato_dni">
+          <inputNames>baja_socioInput</inputNames>
+        </constraints>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_MDdkyDo1EfGKuZME8ejxFw">
         <name xmi:type="expression:Expression" xmi:id="_MDdkyTo1EfGKuZME8ejxFw" content="" returnTypeFixed="true"/>

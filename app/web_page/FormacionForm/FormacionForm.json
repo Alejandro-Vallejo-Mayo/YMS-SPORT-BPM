@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "29378a3f-35e4-4ed0-a59f-e43648d608e0",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777372176142,
+  "lastUpdate" : 1777392125671,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -591,7 +591,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefono"
+                          "value" : "Teléfono"
                         },
                         "placeholder" : {
                           "type" : "constant"

@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "bf3cf46c-2bc5-4072-ad66-67aa68caafcf",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777372126951,
+  "lastUpdate" : 1777392048224,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -488,7 +488,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefono"
+                          "value" : "Teléfono"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -963,7 +963,7 @@
         "    \"apellidos\" : \"\",\r",
         "    \"fecha_nacimiento\" : null,\r",
         "    \"correo\" : \"\",\r",
-        "    \"telefono\" : 0,\r",
+        "    \"telefono\" : \"\",\r",
         "    \"dni\" : \"\",\r",
         "    \"iban\" : \"\",\r",
         "    \"puesto_trabajo\" : \"\",\r",
