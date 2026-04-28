@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "ef343a23-ffbd-417c-b79c-a523ff050447",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776339831993,
+  "lastUpdate" : 1777372286416,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -154,7 +154,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Gestion_incidencia"
+                    "value" : "Gestion Incidencia"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -163,6 +163,10 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "21891c28-fadc-496a-a8f5-25d255521eba",
@@ -237,7 +241,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Articulo"
+                          "value" : "Artículo"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -417,7 +421,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Descripcion"
+                          "value" : "Descripción"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -507,7 +511,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Coste_reparacion"
+                          "value" : "Coste Reparación"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -526,65 +530,38 @@
                         },
                         "required" : {
                           "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "8c44b29b-5c5d-4a3f-9423-f337b447175a",
                       "hasValidationError" : false,
                       "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Aprobacion_gerencia"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "gestion_incidencia.aprobacion_gerencia"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "b87b7385-bb8b-45db-a93c-32e1eda24457",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
                       "description" : ""
                     }
                   ]

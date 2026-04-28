@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "6aeb5bed-c638-49d0-b903-01a772b4eb95",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776355320339,
+  "lastUpdate" : 1777372058669,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -154,7 +154,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Baja_socio"
+                    "value" : "Baja Socio"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -163,6 +163,10 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "bc76666b-39db-40d2-897d-e25253220a9e",
@@ -237,7 +241,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Dni"
+                          "value" : "DNI"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -409,7 +413,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Retencion"
+                          "value" : "Retención"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -470,7 +474,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Condiciones_retencion"
+                          "value" : "Condiciones Retención"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -560,7 +564,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Acepta_retencion"
+                          "value" : "Acepta Retención"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -650,7 +654,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Satisfaccion"
+                          "value" : "Satisfacción"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -669,7 +673,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",
@@ -688,10 +692,12 @@
                           "value" : 0
                         },
                         "min" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : 1
                         },
                         "max" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : 10
                         },
                         "step" : {
                           "type" : "constant",
@@ -760,6 +766,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "24799402-d32a-4826-8ff0-8be1468c8734",

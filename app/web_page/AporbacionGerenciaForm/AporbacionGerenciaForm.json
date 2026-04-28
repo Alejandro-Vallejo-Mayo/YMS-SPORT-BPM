@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "329d066c-a8af-4029-9c8e-281accbca5cd",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776339938059,
+  "lastUpdate" : 1777368481094,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -154,7 +154,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Gestion_incidencia"
+                    "value" : "Gestion Incidencia"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -163,6 +163,10 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "63c5615c-ea89-4c86-9d27-39a91c29c1e8",
@@ -237,7 +241,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Articulo"
+                          "value" : "Artículo"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -417,7 +421,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Descripcion"
+                          "value" : "Descripción"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -507,7 +511,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Coste_reparacion"
+                          "value" : "Coste Reparación"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -589,7 +593,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Aprobacion_gerencia"
+                          "value" : "Aprobación Gerencia"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -598,6 +602,14 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "gestion_incidencia.aprobacion_gerencia"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "b2e4a190-679e-4c84-b49a-fd5ee8c47e49",

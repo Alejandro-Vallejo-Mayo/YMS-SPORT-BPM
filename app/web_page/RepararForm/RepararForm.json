@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "e0207f3a-be0c-4a7c-851e-b224657d9c92",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776414456018,
+  "lastUpdate" : 1777372353399,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -154,7 +154,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Gestion_incidencia"
+                    "value" : "Gestion Incidencia"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -163,6 +163,10 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "2a1cb505-831b-4b43-bd2c-82c480743f88",
@@ -237,7 +241,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Articulo"
+                          "value" : "Artículo"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -346,7 +350,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",
@@ -417,7 +421,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Descripcion"
+                          "value" : "Descripción"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -507,7 +511,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Coste_reparacion"
+                          "value" : "Coste Reparación"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -589,7 +593,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Aprobacion_gerencia"
+                          "value" : "Aprobación Gerencia"
                         },
                         "dimension" : {
                           "type" : "constant",

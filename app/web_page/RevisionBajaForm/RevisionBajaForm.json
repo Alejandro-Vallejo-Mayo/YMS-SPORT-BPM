@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "2e960f4d-fef3-4cc6-83f6-6967d63de460",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776355356789,
+  "lastUpdate" : 1777368068043,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -154,7 +154,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Baja_socio"
+                    "value" : "Baja Socio"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -163,6 +163,10 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "799b86d6-3b7a-41bd-b9d7-3c02cbfb6407",
@@ -237,7 +241,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Dni"
+                          "value" : "DNI"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -409,7 +413,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Retencion"
+                          "value" : "Retención"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -470,7 +474,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Condiciones_retencion"
+                          "value" : "Condiciones Retención"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -560,7 +564,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Acepta_retencion"
+                          "value" : "Acepta Retención"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -650,7 +654,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Satisfaccion"
+                          "value" : "Satisfacción"
                         },
                         "placeholder" : {
                           "type" : "constant"

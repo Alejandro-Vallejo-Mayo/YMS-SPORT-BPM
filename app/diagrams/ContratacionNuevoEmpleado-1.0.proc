@@ -3,150 +3,12 @@
   <process:MainProcess xmi:id="_xJCMYDJhEfGbp_i4xmOvOg" name="ContratacionNuevoEmpleado" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_xJCMYTJhEfGbp_i4xmOvOg" name="ContratacionNuevoEmpleado">
       <elements xmi:type="process:Lane" xmi:id="_xJCMYjJhEfGbp_i4xmOvOg" name="Gerente" actor="_CmsecDmnEfGd6sWZB6UPAw">
-        <elements xmi:type="process:StartEvent" xmi:id="_xJCMYzJhEfGbp_i4xmOvOg" name="Inicio1" outgoing="_xJCMeDJhEfGbp_i4xmOvOg">
+        <elements xmi:type="process:StartEvent" xmi:id="_xJCMYzJhEfGbp_i4xmOvOg" name="Inicio1" outgoing="_5bsswELhEfGh5cauefD00w">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_xJCMZDJhEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_xJCMZTJhEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_xJCMZjJhEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_xJCMZzJhEfGbp_i4xmOvOg" name="Registrar incorporación empleado" outgoing="_eZd5cDJiEfGbp_i4xmOvOg" incoming="_xJCMeDJhEfGbp_i4xmOvOg" overrideActorsOfTheLane="false">
-          <dynamicLabel xmi:type="expression:Expression" xmi:id="_xJCMaDJhEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
-          <dynamicDescription xmi:type="expression:Expression" xmi:id="_xJCMaTJhEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
-          <stepSummary xmi:type="expression:Expression" xmi:id="_xJCMajJhEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_UccwKzmIEfGUvLzC5hRCgg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_UccwLDmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" content="contratacion_nuevo_empleado" type="TYPE_VARIABLE" returnType="com.company.model.ContratacionNuevoEmpleado">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UccwLTmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_UccwLjmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput.nombre" content="contratacion_nuevo_empleadoInput?.nombre" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_UccwLzmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_UccwMDmIEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setNombre">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_UccwMTmIEfGUvLzC5hRCgg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_UccwMjmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" content="contratacion_nuevo_empleado" type="TYPE_VARIABLE" returnType="com.company.model.ContratacionNuevoEmpleado">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UccwMzmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_UccwNDmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput.apellidos" content="contratacion_nuevo_empleadoInput?.apellidos" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_UccwNTmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_UccwNjmIEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setApellidos">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_UccwNzmIEfGUvLzC5hRCgg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_UccwODmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" content="contratacion_nuevo_empleado" type="TYPE_VARIABLE" returnType="com.company.model.ContratacionNuevoEmpleado">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UccwOTmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_UccwOjmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput.fecha_nacimiento" content="contratacion_nuevo_empleadoInput?.fecha_nacimiento" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_UccwOzmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_UccwPDmIEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setFecha_nacimiento">
-              <inputTypes>java.time.LocalDate</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_UccwPTmIEfGUvLzC5hRCgg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_UccwPjmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" content="contratacion_nuevo_empleado" type="TYPE_VARIABLE" returnType="com.company.model.ContratacionNuevoEmpleado">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UccwPzmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_UccwQDmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput.correo" content="contratacion_nuevo_empleadoInput?.correo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_UccwQTmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_UccwQjmIEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setCorreo">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_UccwQzmIEfGUvLzC5hRCgg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_UccwRDmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" content="contratacion_nuevo_empleado" type="TYPE_VARIABLE" returnType="com.company.model.ContratacionNuevoEmpleado">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UccwRTmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_UccwRjmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput.telefono" content="contratacion_nuevo_empleadoInput?.telefono" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_UccwRzmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_UccwSDmIEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setTelefono">
-              <inputTypes>java.lang.Integer</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_UccwSTmIEfGUvLzC5hRCgg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_UccwSjmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" content="contratacion_nuevo_empleado" type="TYPE_VARIABLE" returnType="com.company.model.ContratacionNuevoEmpleado">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UccwSzmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_UccwTDmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput.dni" content="contratacion_nuevo_empleadoInput?.dni" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_UccwTTmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_UccwTjmIEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setDni">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_UccwTzmIEfGUvLzC5hRCgg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_UccwUDmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" content="contratacion_nuevo_empleado" type="TYPE_VARIABLE" returnType="com.company.model.ContratacionNuevoEmpleado">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UccwUTmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_UccwUjmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput.iban" content="contratacion_nuevo_empleadoInput?.iban" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_UccwUzmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_UccwVDmIEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setIban">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_UccwVTmIEfGUvLzC5hRCgg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_UccwVjmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" content="contratacion_nuevo_empleado" type="TYPE_VARIABLE" returnType="com.company.model.ContratacionNuevoEmpleado">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UccwVzmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_UccwWDmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput.puesto_trabajo" content="contratacion_nuevo_empleadoInput?.puesto_trabajo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_UccwWTmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_UccwWjmIEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setPuesto_trabajo">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_UccwWzmIEfGUvLzC5hRCgg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_UccwXDmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" content="contratacion_nuevo_empleado" type="TYPE_VARIABLE" returnType="com.company.model.ContratacionNuevoEmpleado">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UccwXTmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_UccwXjmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput.onboarding" content="contratacion_nuevo_empleadoInput?.onboarding" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_UccwXzmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_UccwYDmIEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setOnboarding">
-              <inputTypes>java.lang.Boolean</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_UccwYTmIEfGUvLzC5hRCgg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_UccwYjmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" content="contratacion_nuevo_empleado" type="TYPE_VARIABLE" returnType="com.company.model.ContratacionNuevoEmpleado">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_UccwYzmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleado" dataType="_xJCMlDJhEfGbp_i4xmOvOg" className="com.company.model.ContratacionNuevoEmpleado"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_UccwZDmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput.formacion" content="contratacion_nuevo_empleadoInput?.formacion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_UccwZTmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_UccwZjmIEfGUvLzC5hRCgg" type="JAVA_METHOD" expression="setFormacion">
-              <inputTypes>java.lang.Boolean</inputTypes>
-            </operator>
-          </operations>
-          <loopCondition xmi:type="expression:Expression" xmi:id="_xJCMazJhEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <loopMaximum xmi:type="expression:Expression" xmi:id="_xJCMbDJhEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-          <cardinalityExpression xmi:type="expression:Expression" xmi:id="_xJCMbTJhEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
-          <iteratorExpression xmi:type="expression:Expression" xmi:id="_xJCMbjJhEfGbp_i4xmOvOg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
-          <completionCondition xmi:type="expression:Expression" xmi:id="_xJCMbzJhEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_xJCMcDJhEfGbp_i4xmOvOg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_hERMQDmIEfGUvLzC5hRCgg" name="RegistrarEmpleadoForm" content="36d18379-d64a-4d43-b4eb-f480c7436bfa" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
-          </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_xJCMcjJhEfGbp_i4xmOvOg">
-            <inputs xmi:type="process:ContractInput" xmi:id="_UccwIDmIEfGUvLzC5hRCgg" name="contratacion_nuevo_empleadoInput" type="COMPLEX" dataReference="contratacion_nuevo_empleado" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_UccwITmIEfGUvLzC5hRCgg" name="nombre" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_UccwIjmIEfGUvLzC5hRCgg" name="apellidos" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_UccwIzmIEfGUvLzC5hRCgg" name="fecha_nacimiento" type="LOCALDATE" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_UccwJDmIEfGUvLzC5hRCgg" name="correo" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_UccwJTmIEfGUvLzC5hRCgg" name="telefono" type="INTEGER" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_UccwJjmIEfGUvLzC5hRCgg" name="dni" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_UccwJzmIEfGUvLzC5hRCgg" name="iban" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_UccwKDmIEfGUvLzC5hRCgg" name="puesto_trabajo" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_UccwKTmIEfGUvLzC5hRCgg" name="onboarding" type="BOOLEAN" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_UccwKjmIEfGUvLzC5hRCgg" name="formacion" type="BOOLEAN" createMode="false"/>
-            </inputs>
-          </contract>
-          <expectedDuration xmi:type="expression:Expression" xmi:id="_xJCMczJhEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
-        </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_XWLc4DJiEfGbp_i4xmOvOg" name="Crear ficha empleado" outgoing="_tUA7QDJkEfGbp_i4xmOvOg" incoming="_eZd5cDJiEfGbp_i4xmOvOg">
+        <elements xmi:type="process:ServiceTask" xmi:id="_XWLc4DJiEfGbp_i4xmOvOg" name="Crear ficha empleado" outgoing="_tUA7QDJkEfGbp_i4xmOvOg" incoming="_5bsswELhEfGh5cauefD00w">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_XWLc4jJiEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_XWLc4TJiEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_XWLc4zJiEfGbp_i4xmOvOg" name="" content="" returnTypeFixed="true"/>
@@ -652,14 +514,6 @@
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_xJCMdjJhEfGbp_i4xmOvOg">
         <targetForm xmi:type="expression:Expression" xmi:id="_xJCMdzJhEfGbp_i4xmOvOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_xJCMeDJhEfGbp_i4xmOvOg" target="_xJCMZzJhEfGbp_i4xmOvOg" source="_xJCMYzJhEfGbp_i4xmOvOg">
-        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_xJCMeTJhEfGbp_i4xmOvOg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_xJCMejJhEfGbp_i4xmOvOg" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-      </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_eZd5cDJiEfGbp_i4xmOvOg" target="_XWLc4DJiEfGbp_i4xmOvOg" source="_xJCMZzJhEfGbp_i4xmOvOg">
-        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_eZd5cTJiEfGbp_i4xmOvOg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_eZd5cjJiEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-      </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_tUA7QDJkEfGbp_i4xmOvOg" target="_qvizYDJkEfGbp_i4xmOvOg" source="_XWLc4DJiEfGbp_i4xmOvOg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_tUD-kDJkEfGbp_i4xmOvOg"/>
         <condition xmi:type="expression:Expression" xmi:id="_tUD-kTJkEfGbp_i4xmOvOg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -683,6 +537,10 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_N0M4sDmnEfGd6sWZB6UPAw" target="_QproUDJlEfGbp_i4xmOvOg" source="_aEnRsDJlEfGbp_i4xmOvOg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_N0RKIDmnEfGd6sWZB6UPAw"/>
         <condition xmi:type="expression:Expression" xmi:id="_N0RxMDmnEfGd6sWZB6UPAw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+      </connections>
+      <connections xmi:type="process:SequenceFlow" xmi:id="_5bsswELhEfGh5cauefD00w" target="_XWLc4DJiEfGbp_i4xmOvOg" source="_xJCMYzJhEfGbp_i4xmOvOg">
+        <decisionTable xmi:type="decision:DecisionTable" xmi:id="_5bsswULhEfGh5cauefD00w"/>
+        <condition xmi:type="expression:Expression" xmi:id="_5bsswkLhEfGh5cauefD00w" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_CmsecDmnEfGd6sWZB6UPAw" name="AdministracionIncorporacion" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_GQf2sDmnEfGd6sWZB6UPAw" name="EncargadoOnboarding"/>
@@ -739,10 +597,6 @@
         <children xmi:type="notation:Node" xmi:id="_xJCMmTJhEfGbp_i4xmOvOg" type="3007" element="_xJCMYjJhEfGbp_i4xmOvOg">
           <children xmi:type="notation:DecorationNode" xmi:id="_xJCMmjJhEfGbp_i4xmOvOg" type="5007"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_xJCMmzJhEfGbp_i4xmOvOg" type="7002">
-            <children xmi:type="notation:Shape" xmi:id="_xJCMnDJhEfGbp_i4xmOvOg" type="3005" element="_xJCMZzJhEfGbp_i4xmOvOg" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
-              <children xmi:type="notation:DecorationNode" xmi:id="_xJCMnTJhEfGbp_i4xmOvOg" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xJCMnjJhEfGbp_i4xmOvOg" x="160" y="60" width="178" height="89"/>
-            </children>
             <children xmi:type="notation:Shape" xmi:id="_xJCMnzJhEfGbp_i4xmOvOg" type="3002" element="_xJCMYzJhEfGbp_i4xmOvOg" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_xJCMoDJhEfGbp_i4xmOvOg" type="5024">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_xJCMoTJhEfGbp_i4xmOvOg" y="5"/>
@@ -808,22 +662,6 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xJCMrDJhEfGbp_i4xmOvOg" width="1320" height="250"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_xJCMrTJhEfGbp_i4xmOvOg"/>
-    <edges xmi:type="notation:Connector" xmi:id="_xJCMrjJhEfGbp_i4xmOvOg" type="4001" element="_xJCMeDJhEfGbp_i4xmOvOg" source="_xJCMnzJhEfGbp_i4xmOvOg" target="_xJCMnDJhEfGbp_i4xmOvOg" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_xJCMrzJhEfGbp_i4xmOvOg" type="6001">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_xJCMsDJhEfGbp_i4xmOvOg" y="-10"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_xJCMsTJhEfGbp_i4xmOvOg" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xJCMsjJhEfGbp_i4xmOvOg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-    </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_eZd5czJiEfGbp_i4xmOvOg" type="4001" element="_eZd5cDJiEfGbp_i4xmOvOg" source="_xJCMnDJhEfGbp_i4xmOvOg" target="_XWQ8cDJiEfGbp_i4xmOvOg" roundedBendpointsRadius="10" routing="Rectilinear">
-      <children xmi:type="notation:DecorationNode" xmi:id="_eZd5djJiEfGbp_i4xmOvOg" type="6001">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_eZd5dzJiEfGbp_i4xmOvOg" y="-10"/>
-      </children>
-      <styles xmi:type="notation:FontStyle" xmi:id="_eZd5dDJiEfGbp_i4xmOvOg" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eZd5dTJiEfGbp_i4xmOvOg" points="[4, 3, -193, 0]$[169, 1, -28, -2]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eZd5eDJiEfGbp_i4xmOvOg" id="(0.9775280898876404,0.48314606741573035)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eZd5eTJiEfGbp_i4xmOvOg" id="(0.15053763440860216,0.45161290322580644)"/>
-    </edges>
     <edges xmi:type="notation:Connector" xmi:id="_tUD-kjJkEfGbp_i4xmOvOg" type="4001" element="_tUA7QDJkEfGbp_i4xmOvOg" source="_XWQ8cDJiEfGbp_i4xmOvOg" target="_qvkokDJkEfGbp_i4xmOvOg" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_tUFMsDJkEfGbp_i4xmOvOg" type="6001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_tUFMsTJkEfGbp_i4xmOvOg" y="-10"/>
@@ -865,8 +703,17 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_N0sA4TmnEfGd6sWZB6UPAw" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_N0sA4jmnEfGd6sWZB6UPAw" points="[9, -32, -55, 195]$[64, -227, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_N0vEMDmnEfGd6sWZB6UPAw" id="(0.9590909090909091,0.4727272727272727)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_N0vEMDmnEfGd6sWZB6UPAw" id="(0.9681818181818181,0.7)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_N0vEMTmnEfGd6sWZB6UPAw" id="(0.6,0.9666666666666667)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_5bwXIELhEfGh5cauefD00w" type="4001" element="_5bsswELhEfGh5cauefD00w" source="_xJCMnzJhEfGbp_i4xmOvOg" target="_XWQ8cDJiEfGbp_i4xmOvOg" roundedBendpointsRadius="10" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_5bwXI0LhEfGh5cauefD00w" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_5bwXJELhEfGh5cauefD00w" y="-10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_5bwXIULhEfGh5cauefD00w" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5bwXIkLhEfGh5cauefD00w" points="[-1, -6, -414, 0]$[380, -7, -33, -1]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5bwXJULhEfGh5cauefD00w" id="(1.0,0.7666666666666667)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5bwXJkLhEfGh5cauefD00w" id="(0.16336633663366337,0.48514851485148514)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>

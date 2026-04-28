@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "7b8b73f3-2a9c-47f4-8bbf-2682c8f9dedc",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776339483533,
+  "lastUpdate" : 1777372166773,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -154,7 +154,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Contratacion_nuevo_empleado"
+                    "value" : "Contratacion Nuevo Empleado"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -163,6 +163,10 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "4e90f65e-a033-46fd-b397-8e4b180b8913",
@@ -413,7 +417,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Fecha_nacimiento"
+                          "value" : "Fecha Nacimiento"
                         },
                         "type" : {
                           "type" : "constant"
@@ -677,7 +681,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Dni"
+                          "value" : "DNI"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -767,7 +771,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Iban"
+                          "value" : "IBAN"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -857,7 +861,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Puesto_trabajo"
+                          "value" : "Puesto Trabajo"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -948,62 +952,17 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "contratacion_nuevo_empleado.onboarding"
-                        }
-                      },
-                      "reference" : "9ba0a5bc-e92d-40d0-a142-40ce226c26c0",
-                      "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Formacion"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "contratacion_nuevo_empleado.formacion"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         }
                       },
-                      "reference" : "5df01f10-da8c-4291-974a-97148106c78d",
+                      "reference" : "9ba0a5bc-e92d-40d0-a142-40ce226c26c0",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""

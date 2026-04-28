@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "4a148d92-5638-4cc8-b701-82febea14833",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1776333145352,
+  "lastUpdate" : 1777372218387,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -154,7 +154,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Alta_nuevo_socio"
+                    "value" : "Alta Nuevo Socio"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -163,6 +163,10 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "904640a0-8181-4691-b42e-94d6f625acb6",
@@ -413,7 +417,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Fecha_nacimiento"
+                          "value" : "Fecha Nacimiento"
                         },
                         "type" : {
                           "type" : "constant"
@@ -587,7 +591,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefono"
+                          "value" : "Teléfono"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -677,7 +681,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Dni"
+                          "value" : "DNI"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -767,7 +771,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Iban"
+                          "value" : "IBAN"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -849,7 +853,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Validacion"
+                          "value" : "Validación"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -914,7 +918,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",
