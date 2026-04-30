@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "2f01b130-0f90-4d76-8b12-4ce8e4b671bf",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777371971994,
+  "lastUpdate" : 1777463701272,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -433,7 +433,7 @@
         "    \"motivo\" : \"\",\r",
         "    \"retencion\" : false,\r",
         "    \"condiciones_retencion\" : \"\",\r",
-        "    \"acepta_retencion\" : \"\",\r",
+        "    \"acepta_retencion\" : false,\r",
         "    \"satisfaccion\" : 0,\r",
         "    \"comentario\" : \"\"\r",
         "  }\r",

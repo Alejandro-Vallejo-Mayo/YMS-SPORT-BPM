@@ -207,7 +207,7 @@
               <inputs xmi:type="process:ContractInput" xmi:id="_MDdkDjo1EfGKuZME8ejxFw" name="motivo" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_MDdkDzo1EfGKuZME8ejxFw" name="retencion" type="BOOLEAN" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_MDdkEDo1EfGKuZME8ejxFw" name="condiciones_retencion" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_MDdkETo1EfGKuZME8ejxFw" name="acepta_retencion" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_MDdkETo1EfGKuZME8ejxFw" name="acepta_retencion" type="BOOLEAN" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_MDdkEjo1EfGKuZME8ejxFw" name="satisfaccion" type="INTEGER" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_MDdkEzo1EfGKuZME8ejxFw" name="comentario" createMode="false"/>
             </inputs>
@@ -309,7 +309,7 @@
               <inputs xmi:type="process:ContractInput" xmi:id="_MDdkTTo1EfGKuZME8ejxFw" name="motivo" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_MDdkTjo1EfGKuZME8ejxFw" name="retencion" type="BOOLEAN" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_MDdkTzo1EfGKuZME8ejxFw" name="condiciones_retencion" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_MDdkUDo1EfGKuZME8ejxFw" name="acepta_retencion" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_MDdkUDo1EfGKuZME8ejxFw" name="acepta_retencion" type="BOOLEAN" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_MDdkUTo1EfGKuZME8ejxFw" name="satisfaccion" type="INTEGER" createMode="false"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_MDdkUjo1EfGKuZME8ejxFw" name="comentario" createMode="false"/>
             </inputs>
@@ -338,7 +338,7 @@
                 <expression xmi:type="expression:TableExpression" xmi:id="_n2NvazzkEfG0QJ_O630d4g"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_n2NvbDzkEfG0QJ_O630d4g" key="add_bonita_context_headers">
-                <expression xmi:type="expression:Expression" xmi:id="_n2NvbTzkEfG0QJ_O630d4g" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_n2NvbTzkEfG0QJ_O630d4g" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_n2NvbjzkEfG0QJ_O630d4g" key="bonita_activity_instance_id_header">
                 <expression xmi:type="expression:Expression" xmi:id="_n2NvbzzkEfG0QJ_O630d4g" name="X-Bonita-Activity-Instance-Id" content="X-Bonita-Activity-Instance-Id" returnTypeFixed="true"/>
@@ -356,15 +356,15 @@
                 <expression xmi:type="expression:Expression" xmi:id="_n2NvdzzkEfG0QJ_O630d4g" name="X-Bonita-Task-Assignee-Id" content="X-Bonita-Task-Assignee-Id" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_n2NveDzkEfG0QJ_O630d4g" key="body">
-                <expression xmi:type="expression:Expression" xmi:id="_n2NveTzkEfG0QJ_O630d4g" name="body()" content="import groovy.json.JsonBuilder&#xD;&#xA;&#xD;&#xA;def datos = [&#xD;&#xA;&#x9;dni: baja_socio.dni,&#xD;&#xA;&#x9;motivo_original: baja_socio.motivo,&#xD;&#xA;&#x9;acepta_oferta: baja_socio.acepta_retencion, // STRING: &quot;SI&quot;/&quot;NO&quot; o condiciones&#xD;&#xA;&#x9;origen: &quot;Bonita - Baja Socio&quot;&#xD;&#xA;]&#xD;&#xA;&#xD;&#xA;return new JsonBuilder(datos).toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_OP-qIDzmEfG0QJ_O630d4g" name="baja_socio" dataType="_MDdk3zo1EfGKuZME8ejxFw" className="com.company.model.BajaSocio"/>
+                <expression xmi:type="expression:Expression" xmi:id="_n2NveTzkEfG0QJ_O630d4g" name="body()" content="import groovy.json.JsonBuilder&#xD;&#xA;&#xD;&#xA;def datos = [&#xD;&#xA;&#x9;dni: baja_socio.dni,&#xD;&#xA;&#x9;motivo_original: baja_socio.motivo,&#xD;&#xA;&#x9;acepta_oferta: baja_socio.acepta_retencion ?: false, // STRING: &quot;SI&quot;/&quot;NO&quot; o condiciones&#xD;&#xA;&#x9;origen: &quot;Bonita - Baja Socio&quot;&#xD;&#xA;]&#xD;&#xA;&#xD;&#xA;return new JsonBuilder(datos).toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_3l3hkEOnEfGtntSYVzqfUQ" name="baja_socio" dataType="_MDdk3zo1EfGKuZME8ejxFw" className="com.company.model.BajaSocio"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_n2NvezzkEfG0QJ_O630d4g" key="do_not_follow_redirect">
-                <expression xmi:type="expression:Expression" xmi:id="_n2NvfDzkEfG0QJ_O630d4g" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_n2NvfDzkEfG0QJ_O630d4g" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_n2NvfTzkEfG0QJ_O630d4g" key="ignore_body">
-                <expression xmi:type="expression:Expression" xmi:id="_n2NvfjzkEfG0QJ_O630d4g" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_n2NvfjzkEfG0QJ_O630d4g" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_n2NvfzzkEfG0QJ_O630d4g" key="fail_on_http_4xx">
                 <expression xmi:type="expression:Expression" xmi:id="_n2NvgDzkEfG0QJ_O630d4g" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -666,14 +666,14 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_MDdkvzo1EfGKuZME8ejxFw" name="SI" target="_MDdkFTo1EfGKuZME8ejxFw" source="_MDdkoDo1EfGKuZME8ejxFw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_MDdkwDo1EfGKuZME8ejxFw"/>
-        <condition xmi:type="expression:Expression" xmi:id="_MDdkwTo1EfGKuZME8ejxFw" name="retencion" content="baja_socio.retencion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Jwy6IDpWEfGug7L0qSEsTw" name="baja_socio" dataType="_MDdk3zo1EfGKuZME8ejxFw" className="com.company.model.BajaSocio"/>
+        <condition xmi:type="expression:Expression" xmi:id="_MDdkwTo1EfGKuZME8ejxFw" name="retencion" content="baja_socio.retencion == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XCIUIEOoEfGtntSYVzqfUQ" name="baja_socio" dataType="_MDdk3zo1EfGKuZME8ejxFw" className="com.company.model.BajaSocio"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_MDdkwjo1EfGKuZME8ejxFw" name="NO" target="_MDdkVDo1EfGKuZME8ejxFw" source="_MDdkoDo1EfGKuZME8ejxFw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_MDdkwzo1EfGKuZME8ejxFw"/>
-        <condition xmi:type="expression:Expression" xmi:id="_MDdkxDo1EfGKuZME8ejxFw" name="no retencion" content="!baja_socio.retencion" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_NnmMkDpWEfGug7L0qSEsTw" name="baja_socio" dataType="_MDdk3zo1EfGKuZME8ejxFw" className="com.company.model.BajaSocio"/>
+        <condition xmi:type="expression:Expression" xmi:id="_MDdkxDo1EfGKuZME8ejxFw" name="no retencion" content="baja_socio.retencion == false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_aGfdAEOoEfGtntSYVzqfUQ" name="baja_socio" dataType="_MDdk3zo1EfGKuZME8ejxFw" className="com.company.model.BajaSocio"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_uqxg0ELhEfGh5cauefD00w" target="_MDdj1jo1EfGKuZME8ejxFw" source="_MDdjUzo1EfGKuZME8ejxFw">
@@ -688,7 +688,7 @@
           <inputs xmi:type="process:ContractInput" xmi:id="_D85o4jpWEfGug7L0qSEsTw" name="motivo"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_D85o4zpWEfGug7L0qSEsTw" name="retencion" type="BOOLEAN"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_D85o5DpWEfGug7L0qSEsTw" name="condiciones_retencion"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_D85o5TpWEfGug7L0qSEsTw" name="acepta_retencion"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_D85o5TpWEfGug7L0qSEsTw" name="acepta_retencion" type="BOOLEAN"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_D85o5jpWEfGug7L0qSEsTw" name="satisfaccion" type="INTEGER"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_D85o5zpWEfGug7L0qSEsTw" name="comentario"/>
         </inputs>
@@ -767,7 +767,7 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_MDdk_Do1EfGKuZME8ejxFw" fontName="Segoe UI"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_MDdk_To1EfGKuZME8ejxFw"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_MDdk_jo1EfGKuZME8ejxFw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MDdk_zo1EfGKuZME8ejxFw" x="28" y="250" width="1932" height="250"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MDdk_zo1EfGKuZME8ejxFw" x="28" y="250" width="1932" height="323"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_MDdlADo1EfGKuZME8ejxFw" type="3007" element="_MDdjUjo1EfGKuZME8ejxFw">
           <children xmi:type="notation:DecorationNode" xmi:id="_MDdlATo1EfGKuZME8ejxFw" type="5007"/>
