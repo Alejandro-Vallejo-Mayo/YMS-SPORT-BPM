@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "ef343a23-ffbd-417c-b79c-a523ff050447",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777372286416,
+  "lastUpdate" : 1777636725003,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -42,7 +42,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
+                  "value" : "Evaluar Coste Reparación"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -51,6 +51,10 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
                 }
               },
               "reference" : "6435b69d-bc0d-434c-98b6-f5154bf56d28",

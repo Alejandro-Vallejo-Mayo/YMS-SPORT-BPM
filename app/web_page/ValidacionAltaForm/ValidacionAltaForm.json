@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "2de3b79c-fda0-4084-860e-0e3100357ae0",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777371827377,
+  "lastUpdate" : 1777636889147,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -42,7 +42,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
+                  "value" : "Validar Solicitud"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -51,6 +51,10 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
                 }
               },
               "reference" : "2825dac0-6dcd-433f-a332-9eac5f8b4f87",

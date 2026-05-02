@@ -30,12 +30,11 @@
         <businessObject qualifiedName="com.company.model.BajaSocio">
             <fields>
                 <field type="STRING" length="255" name="dni" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="correo" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="motivo" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="retencion" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="condiciones_retencion" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="acepta_retencion" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="satisfaccion" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="comentario" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints>
                 <uniqueConstraint name="dni_unico">

@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "e0207f3a-be0c-4a7c-851e-b224657d9c92",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777372353399,
+  "lastUpdate" : 1777636851554,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -42,7 +42,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
+                  "value" : "Reparar"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -51,6 +51,10 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
                 }
               },
               "reference" : "f47863d6-1b83-43ab-8130-b57a4580c1c9",

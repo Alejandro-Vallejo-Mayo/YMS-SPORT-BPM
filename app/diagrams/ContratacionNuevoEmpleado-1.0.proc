@@ -519,7 +519,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_xJCMdDJhEfGbp_i4xmOvOg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_sHDSIEMpEfGj5YWibx2ocw" name="ContratacionNuevoEmpleadoForm" content="bf3cf46c-2bc5-4072-ad66-67aa68caafcf" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_InIXIEU9EfGNr4XoEmJiUw" name="ContratacionNuevoEmpleadoForm1" content="39323955-18eb-40dd-9857-983a7b0c8760" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_xJCMdjJhEfGbp_i4xmOvOg">
         <targetForm xmi:type="expression:Expression" xmi:id="_xJCMdzJhEfGbp_i4xmOvOg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -571,7 +571,8 @@
             <mapping xmi:type="process:ContractInputMapping" xmi:id="_2NrWIUMkEfGj5YWibx2ocw"/>
           </inputs>
         </inputs>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_iqbzcEM5EfGj5YWibx2ocw" expression="contratacion_nuevo_empleadoInput?.fecha_nacimiento.plusYears(18).isBefore(java.time.LocalDate.now())" name="fecha_valida">
+        <inputs xmi:type="process:ContractInput" xmi:id="__bJvwEU8EfGNr4XoEmJiUw" name="cvEmpleadoDocumentInput" type="FILE" dataReference="cvEmpleado"/>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_iqbzcEM5EfGj5YWibx2ocw" expression="contratacion_nuevo_empleadoInput?.fecha_nacimiento.plusYears(18).isBefore(java.time.LocalDate.now())" name="fecha_nacimiento_valida">
           <inputNames>contratacion_nuevo_empleadoInput</inputNames>
         </constraints>
         <constraints xmi:type="process:ContractConstraint" xmi:id="_FnoHMEMbEfG2TvNjwEtypg" expression="contratacion_nuevo_empleadoInput?.correo.toString().contains(&quot;@&quot;)" name="formato_correo">
@@ -587,6 +588,11 @@
           <inputNames>contratacion_nuevo_empleadoInput</inputNames>
         </constraints>
       </contract>
+      <documents xmi:type="process:Document" xmi:id="_msgWoEU6EfGNr4XoEmJiUw" name="cvEmpleado" documentType="CONTRACT" contractInput="__bJvwEU8EfGNr4XoEmJiUw">
+        <mimeType xmi:type="expression:Expression" xmi:id="_msgWoUU6EfGNr4XoEmJiUw" name="" content="" returnTypeFixed="true"/>
+        <url xmi:type="expression:Expression" xmi:id="_msgWokU6EfGNr4XoEmJiUw" name="" content="" returnTypeFixed="true"/>
+        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_msgWo0U6EfGNr4XoEmJiUw" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
+      </documents>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_xJCMfTJhEfGbp_i4xmOvOg">
         <name xmi:type="expression:Expression" xmi:id="_xJCMfjJhEfGbp_i4xmOvOg" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_xJCMfzJhEfGbp_i4xmOvOg" content="" returnTypeFixed="true"/>
