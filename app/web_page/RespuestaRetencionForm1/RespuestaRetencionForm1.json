@@ -1,10 +1,10 @@
 {
-  "id" : "BienvenidaAltaForm",
-  "name" : "BienvenidaAltaForm",
+  "id" : "RespuestaRetencionForm1",
+  "name" : "RespuestaRetencionForm1",
   "type" : "form",
-  "uuid" : "4a148d92-5638-4cc8-b701-82febea14833",
+  "uuid" : "ecdc3ad6-b0f9-4829-bd43-c80db644e26f",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777637825846,
+  "lastUpdate" : 1777637873356,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -13,20 +13,8 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          },
-          "repeatedCollection" : {
-            "type" : "variable"
-          }
-        },
-        "reference" : "b0c17370-af3f-4369-8786-edfadd6a0eae",
+        "propertyValues" : { },
+        "reference" : "5be6644b-0303-4033-93e3-50cba708b06a",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -54,7 +42,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "Entregar Bienvenida"
+                  "value" : "Ofrecer Alternativa Retener"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -69,7 +57,7 @@
                   "value" : false
                 }
               },
-              "reference" : "3fadc5d6-54cf-427b-af97-5a0e6ec68181",
+              "reference" : "e7be41f3-2b5c-4851-b76a-60487c45fe5b",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -117,7 +105,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "efecff75-d2bd-434f-aa83-27339e1a9f53",
+              "reference" : "2325e65c-039c-4dfa-8473-742a4e0bd3fc",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -133,7 +121,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "4f2ad8d6-a6d2-47a5-8f61-f28e96490447",
+        "reference" : "d7ba9b62-65d4-4751-875b-b2784a9a68fa",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -142,7 +130,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "7fdd3683-99c5-4cf9-ab6c-3cef40f3f6b2",
+          "reference" : "1608df5c-923e-4197-ba9e-ea8f939faa4b",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -170,7 +158,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Alta Nuevo Socio"
+                    "value" : "Baja Socio"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -185,7 +173,7 @@
                     "value" : false
                   }
                 },
-                "reference" : "904640a0-8181-4691-b42e-94d6f625acb6",
+                "reference" : "2980d95c-4360-4d37-b467-9419661f8286",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -217,190 +205,10 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2cd7ef96-dff0-430a-954e-929f9d60ee76",
+                "reference" : "8cda9176-8a84-4f66-8321-074341a7fab9",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Nombre"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "alta_nuevo_socio.nombre"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "61118432-594c-4ab3-89c1-78a9d3f66d88",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Apellidos"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "alta_nuevo_socio.apellidos"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "818f3fda-22f2-4c09-939e-6982e5b53560",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
                   [
                     {
                       "type" : "component",
@@ -452,7 +260,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "alta_nuevo_socio.dni"
+                          "value" : "baja_socio.dni"
                         },
                         "required" : {
                           "type" : "constant",
@@ -485,7 +293,330 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "74ef7e1d-e771-47f4-920e-a346a61f7fe4",
+                      "reference" : "57cd1c58-438c-4923-bec0-c8a9432623ba",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Correo Electrónico"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "baja_socio.correo"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "61a924f5-16b9-4436-98ea-a0c512b427f2",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Motivo"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "baja_socio.motivo"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "c514c98a-1ac8-44fe-b2eb-62d1f7749844",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Retencion"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "baja_socio.retencion"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "2e5f0c30-761d-4b37-a763-391e2f234f00",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Condiciones Retención"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "baja_socio.condiciones_retencion"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "847cc8aa-a7be-4d81-9948-b7975b05b749",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -519,7 +650,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Bienvenida"
+                          "value" : "Acepta Retención"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -527,18 +658,18 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "alta_nuevo_socio.bienvenida"
+                          "value" : "baja_socio.acepta_retencion"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         }
                       },
-                      "reference" : "be2accc3-9d9b-41c7-919c-b17df3cc3957",
+                      "reference" : "07b18d04-c15a-4452-9752-9fbe6f261764",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
@@ -622,7 +753,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a8227fe0-1597-47cd-b1be-274b2c601ccc",
+                "reference" : "b87ec6d0-8803-45cb-9b9f-3a8abf02a963",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -674,7 +805,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7ae744ba-95c7-4e58-b788-2421a14df25e",
+                "reference" : "ee2b0722-71d5-4721-89d5-417a3fbc918c",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -686,13 +817,6 @@
     ]
   ],
   "variables" : {
-    "alta_nuevo_socio" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.alta_nuevo_socio_ref.link}}"
-      ],
-      "exposed" : false
-    },
     "task" : {
       "type" : "url",
       "value" : [
@@ -718,19 +842,16 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.alta_nuevo_socio ){",
+        "if( $data.baja_socio ){",
         "\treturn {",
-        "\t\t//map alta_nuevo_socio variable to expected task contract input",
-        "\t\talta_nuevo_socioInput: {",
-        "\t\t\tnombre: $data.alta_nuevo_socio.nombre !== undefined ? $data.alta_nuevo_socio.nombre : null,",
-        "\t\t\tapellidos: $data.alta_nuevo_socio.apellidos !== undefined ? $data.alta_nuevo_socio.apellidos : null,",
-        "\t\t\tfecha_nacimiento: $data.alta_nuevo_socio.fecha_nacimiento !== undefined ? $data.alta_nuevo_socio.fecha_nacimiento : null,",
-        "\t\t\tcorreo: $data.alta_nuevo_socio.correo !== undefined ? $data.alta_nuevo_socio.correo : null,",
-        "\t\t\ttelefono: $data.alta_nuevo_socio.telefono !== undefined ? $data.alta_nuevo_socio.telefono : null,",
-        "\t\t\tdni: $data.alta_nuevo_socio.dni !== undefined ? $data.alta_nuevo_socio.dni : null,",
-        "\t\t\tiban: $data.alta_nuevo_socio.iban !== undefined ? $data.alta_nuevo_socio.iban : null,",
-        "\t\t\tvalidacion: $data.alta_nuevo_socio.validacion !== undefined ? $data.alta_nuevo_socio.validacion : null,",
-        "\t\t\tbienvenida: $data.alta_nuevo_socio.bienvenida !== undefined ? $data.alta_nuevo_socio.bienvenida : null",
+        "\t\t//map baja_socio variable to expected task contract input",
+        "\t\tbaja_socioInput: {",
+        "\t\t\tdni: $data.baja_socio.dni !== undefined ? $data.baja_socio.dni : null,",
+        "\t\t\tcorreo: $data.baja_socio.correo !== undefined ? $data.baja_socio.correo : null,",
+        "\t\t\tmotivo: $data.baja_socio.motivo !== undefined ? $data.baja_socio.motivo : null,",
+        "\t\t\tretencion: $data.baja_socio.retencion !== undefined ? $data.baja_socio.retencion : null,",
+        "\t\t\tcondiciones_retencion: $data.baja_socio.condiciones_retencion !== undefined ? $data.baja_socio.condiciones_retencion : null,",
+        "\t\t\tacepta_retencion: $data.baja_socio.acepta_retencion !== undefined ? $data.baja_socio.acepta_retencion : null",
         "\t\t}",
         "\t}",
         "}"
@@ -744,6 +865,13 @@
       ],
       "exposed" : false
     },
+    "baja_socio" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.baja_socio_ref.link}}"
+      ],
+      "exposed" : false
+    },
     "taskId" : {
       "type" : "urlparameter",
       "value" : [
@@ -754,14 +882,14 @@
   },
   "assets" : [
     {
-      "id" : "fe687f48-063b-46f7-95ce-1b8cbb1ace99",
+      "id" : "f673cf39-ba0a-48c4-827d-f5d0d183d818",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "2ca43e9f-6cb7-4270-924d-9d095ece05d4",
+      "id" : "14e9ae1c-27ed-47bd-b651-a32c39ba7af0",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,

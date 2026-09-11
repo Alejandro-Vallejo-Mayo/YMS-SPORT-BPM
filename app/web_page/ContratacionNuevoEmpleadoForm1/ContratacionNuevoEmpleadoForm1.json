@@ -1,10 +1,10 @@
 {
-  "id" : "AltaNuevoSocioForm",
-  "name" : "AltaNuevoSocioForm",
+  "id" : "ContratacionNuevoEmpleadoForm1",
+  "name" : "ContratacionNuevoEmpleadoForm1",
   "type" : "form",
-  "uuid" : "7c34b564-c437-42c4-bf3f-db12241162de",
+  "uuid" : "39323955-18eb-40dd-9857-983a7b0c8760",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1777390955343,
+  "lastUpdate" : 1777626759227,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "d9c5f1c6-8da8-4364-87bb-b77437c77f9b",
+        "reference" : "d3455c52-2d3b-416d-9462-0b873086bebb",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -23,7 +23,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "431df975-8923-4bd1-837e-e63ae226d019",
+          "reference" : "56b98f7c-7639-4868-ab75-bb2f2f38395b",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -51,7 +51,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Alta Nuevo Socio"
+                    "value" : "Contratacion_nuevo_empleado"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -60,13 +60,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
                   }
                 },
-                "reference" : "55ac3375-3653-464a-8d4d-6f782309d29b",
+                "reference" : "d15f8091-9dba-4164-8ec1-7afa34aaf455",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -98,7 +94,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "d900914e-842b-4987-a90e-4c6ffecbfaf3",
+                "reference" : "e338da32-ee1b-404d-ad6d-284b6afab75d",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -153,7 +149,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.alta_nuevo_socioInput.nombre"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.nombre"
                         },
                         "required" : {
                           "type" : "constant",
@@ -186,7 +182,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "800aa9b2-4698-4b2d-8b4f-91e558488698",
+                      "reference" : "766f94c0-e5da-4879-99e4-7566d9949950",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -243,7 +239,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.alta_nuevo_socioInput.apellidos"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.apellidos"
                         },
                         "required" : {
                           "type" : "constant",
@@ -276,7 +272,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "4868d231-46db-4206-aa11-28d21573988e",
+                      "reference" : "30152b28-3d35-478c-84d0-3a9368b6f249",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -333,7 +329,7 @@
                         },
                         "showToday" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -349,14 +345,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.alta_nuevo_socioInput.fecha_nacimiento"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.fecha_nacimiento"
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         }
                       },
-                      "reference" : "11ec2db1-a4a4-4f30-bf49-30434ad23c85",
+                      "reference" : "b6e6afe2-7e85-4057-98bc-6a2c73894867",
                       "hasValidationError" : false,
                       "id" : "pbDatePicker",
                       "description" : ""
@@ -398,7 +394,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Correo"
+                          "value" : "Correo Electrónico"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -413,7 +409,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.alta_nuevo_socioInput.correo"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.correo"
                         },
                         "required" : {
                           "type" : "constant",
@@ -446,7 +442,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "053eeb7c-0d3a-4570-8a7a-24ff0aebf483",
+                      "reference" : "ba81aa67-05eb-46ec-af69-74a281e31016",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -456,19 +452,54 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
                         "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "cssClasses" : {
+                        "labelHidden" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Teléfono"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "number"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.telefono"
                         },
                         "required" : {
                           "type" : "constant",
@@ -486,40 +517,9 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Teléfono"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.alta_nuevo_socioInput.telefono"
-                        },
                         "debounce" : {
                           "type" : "constant",
                           "value" : 0
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "number"
                         },
                         "min" : {
                           "type" : "constant"
@@ -532,9 +532,10 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "45ee1242-cef4-477e-82c6-81fb08b860d8",
+                      "reference" : "5016fc09-0875-4d48-b9d7-3977e27b33db",
                       "hasValidationError" : false,
-                      "id" : "pbInput"
+                      "id" : "pbInput",
+                      "description" : ""
                     }
                   ],
                   [
@@ -588,7 +589,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.alta_nuevo_socioInput.dni"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.dni"
                         },
                         "required" : {
                           "type" : "constant",
@@ -621,7 +622,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "5c764e8e-6240-4e2c-bfae-efc1f8f7783e",
+                      "reference" : "5edfc1a1-3421-412b-a944-3b32b3d8028a",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -678,7 +679,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.alta_nuevo_socioInput.iban"
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.iban"
                         },
                         "required" : {
                           "type" : "constant",
@@ -711,9 +712,272 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "4570a65d-cdda-4bb2-8251-8e7f5a006f89",
+                      "reference" : "1cdd5261-3cca-4441-8c07-cd55956f4467",
                       "hasValidationError" : false,
                       "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Puesto de Trabajo"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.puesto_trabajo"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "d5413a49-d9fe-4c8a-81e8-19d8f74a8821",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Instructor Formación"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Select an option"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "instructores_formacion"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant",
+                          "value" : "nombre"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : "username"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.contratacion_nuevo_empleadoInput.instructor_formacion"
+                        }
+                      },
+                      "reference" : "8e6e0afc-1d17-4b5e-a698-7c4cff6c6f8a",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect"
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "81a0f5d4-7860-4cdf-aa8a-6ed00d0644d8",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "CV Empleado"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Browse to upload a new file..."
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.cvEmpleadoDocumentInput"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : "../API/formFileUpload"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "errorContent" : {
+                          "type" : "variable"
+                        }
+                      },
+                      "reference" : "29dc689f-51bb-48dd-b89a-591da58a32ac",
+                      "hasValidationError" : false,
+                      "id" : "pbUpload",
                       "description" : ""
                     }
                   ]
@@ -795,7 +1059,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a030cd11-3fea-455e-8249-83d052a20416",
+                "reference" : "9ae26aaa-c4bb-4521-934e-ba8dbe5b5810",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -847,7 +1111,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e0365260-792c-48c2-ac98-5844d76530cb",
+                "reference" : "1c6eb549-b3f2-4f41-9c56-81d60f96022a",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -863,7 +1127,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"alta_nuevo_socioInput\" : {\r",
+        "  \"contratacion_nuevo_empleadoInput\" : {\r",
         "    \"nombre\" : \"\",\r",
         "    \"apellidos\" : \"\",\r",
         "    \"fecha_nacimiento\" : null,\r",
@@ -871,9 +1135,12 @@
         "    \"telefono\" : \"\",\r",
         "    \"dni\" : \"\",\r",
         "    \"iban\" : \"\",\r",
-        "    \"validacion\" : false,\r",
-        "    \"bienvenida\" : false\r",
-        "  }\r",
+        "    \"puesto_trabajo\" : \"\",\r",
+        "    \"onboarding\" : false,\r",
+        "    \"formacion\" : false,\r",
+        "    \"instructor_formacion\" : \"\"\r",
+        "  },\r",
+        "  \"cvEmpleadoDocumentInput\" : null\r",
         "}"
       ],
       "exposed" : false
@@ -897,24 +1164,38 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\talta_nuevo_socioInput: $data.formInput.alta_nuevo_socioInput",
+        "\tcontratacion_nuevo_empleadoInput: $data.formInput.contratacion_nuevo_empleadoInput,",
+        "\tcvEmpleadoDocumentInput: $data.formInput.cvEmpleadoDocumentInput",
         "}"
+      ],
+      "exposed" : false
+    },
+    "instructores_formacion" : {
+      "type" : "json",
+      "value" : [
+        "[",
+        "    {\"nombre\": \"Ana Beltran\", \"username\": \"ana.beltran\"},",
+        "    {\"nombre\": \"Clara Ortiz\", \"username\": \"clara.ortiz\"},",
+        "    {\"nombre\": \"Diego Castro\", \"username\": \"diego.castro\"},",
+        "    {\"nombre\": \"Raul Jimenez\", \"username\": \"raul.jimenez\"},",
+        "    {\"nombre\": \"Sergio Vega\", \"username\": \"sergio.vega\"}",
+        "]"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "5fa20308-6357-4239-b51f-6f5a5ed88e1f",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "02b36118-112d-437a-a9a6-4782efe1e5fe",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "bfe284d2-a785-44c3-bcfc-ca365d92d678",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "4eac5873-5469-44e9-a1b2-423482272181",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }

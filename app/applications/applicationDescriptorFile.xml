@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="AppYMS-Sport" version="1.0" profile="User" homePage="faq" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+        <displayName>Aplicación YMS-Sport</displayName>
+        <description>Aplicación personalizada para el personal de recepción con accesos rápidos a los procesos principales.</description>
+        <applicationPages>
+            <applicationPage customPage="custompage_FAQ" token="faq"/>
+            <applicationPage customPage="custompage_CentroControlIncidencias" token="incidencias"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="faq">
+                <displayName>FAQ</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="incidencias">
+                <displayName>Incidencias</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>
